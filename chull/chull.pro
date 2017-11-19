@@ -29,14 +29,16 @@ SOURCES += \
     algorithms.cpp \
     sortbyyasc.cpp \
     sortbyxasc.cpp \
-    draw.cpp
+    draw.cpp \
+    ptgenerator.cpp
 
 HEADERS += \
         widget.h \
     algorithms.h \
     sortbyyasc.h \
     sortbyxasc.h \
-    draw.h
+    draw.h \
+    ptgenerator.h
 
 FORMS += \
         widget.ui

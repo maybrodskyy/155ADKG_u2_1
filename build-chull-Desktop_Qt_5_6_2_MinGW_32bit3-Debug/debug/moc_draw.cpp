@@ -1,44 +1,42 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'widget.h'
+** Meta object code from reading C++ file 'draw.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.6.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../chull/widget.h"
+#include "../../chull/draw.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'widget.h' doesn't include <QObject>."
+#error "The header file 'draw.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.1. It"
+#error "This file was generated using the moc from 5.6.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Widget_t {
+struct qt_meta_stringdata_draw_t {
     QByteArrayData data[1];
-    char stringdata0[7];
+    char stringdata0[5];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Widget_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_draw_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Widget_t qt_meta_stringdata_Widget = {
+static const qt_meta_stringdata_draw_t qt_meta_stringdata_draw = {
     {
-QT_MOC_LITERAL(0, 0, 6) // "Widget"
+QT_MOC_LITERAL(0, 0, 4) // "draw"
 
     },
-    "Widget"
+    "draw"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Widget[] = {
+static const uint qt_meta_data_draw[] = {
 
  // content:
        7,       // revision
@@ -54,7 +52,7 @@ static const uint qt_meta_data_Widget[] = {
        0        // eod
 };
 
-void Widget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void draw::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -62,29 +60,30 @@ void Widget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     Q_UNUSED(_a);
 }
 
-const QMetaObject Widget::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_Widget.data,
-      qt_meta_data_Widget,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject draw::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_draw.data,
+      qt_meta_data_draw,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *Widget::metaObject() const
+const QMetaObject *draw::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Widget::qt_metacast(const char *_clname)
+void *draw::qt_metacast(const char *_clname)
 {
-    if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Widget.stringdata0))
-        return static_cast<void*>(const_cast< Widget*>(this));
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_draw.stringdata0))
+        return static_cast<void*>(const_cast< draw*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
-int Widget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int draw::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
-QT_WARNING_POP
 QT_END_MOC_NAMESPACE

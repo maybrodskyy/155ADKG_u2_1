@@ -3,6 +3,7 @@
 #include <QMessageBox>
 #include "QDebug"
 #include <QElapsedTimer>
+#include <ptgenerator.h>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -25,7 +26,12 @@ if(input_numberd<1000 || input_numberd>1000000){
 close();
 }
 
-// zkousel jsem generaci
+std::vector<QPoint> pts = ptgenerator::generateRandom(input_numberd);
+ui->Canvas->setPoints(pts);
+ui->Canvas->repaint();
+
+// zkousel jsem generaci -nezkousej ve widgetu plz :D
+/*
 std::vector<QPoint> random_points;
 int x,y;
 
@@ -37,7 +43,7 @@ for(int i = 0; i < input_numberd; i++)
 
     random_points.push_back(point);
 }
-
+*/
 
 }
 
@@ -49,6 +55,9 @@ void Widget::on_Grid_clicked()
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
     close();
     }
+    std::vector<QPoint> pts = ptgenerator::generateGrid(input_numberd);
+    ui->Canvas->setPoints(pts);
+    ui->Canvas->repaint();
 }
 
 void Widget::on_Cluster_clicked()
@@ -65,6 +74,10 @@ void Widget::on_Cluster_clicked()
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of clusters has to be in interval between 10 and 1000"));
     close();
     }
+
+    std::vector<QPoint> pts = ptgenerator::generateCluster(input_numberd);
+    ui->Canvas->setPoints(pts);
+    ui->Canvas->repaint();
 }
 
 void Widget::on_Jarvis_clicked()
