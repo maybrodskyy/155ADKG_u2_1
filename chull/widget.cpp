@@ -4,6 +4,7 @@
 #include "QDebug"
 #include <QElapsedTimer>
 #include <ptgenerator.h>
+#include <algorithms.h>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -85,6 +86,9 @@ void Widget::on_Cluster_clicked()
 
 void Widget::on_Jarvis_clicked()
 {
+    std::vector<QPoint> pts = ui->Canvas->getPoints();
+    std::vector<QPoint> hull = algorithms::jarvisCH(pts);
+    ui->Canvas->setHull(hull);
     ui->Canvas->repaint();
 
     QElapsedTimer time_bitch;
