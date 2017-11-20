@@ -23,7 +23,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>530</x>
@@ -51,21 +51,17 @@
      <widget class="QLineEdit" name="num_rand"/>
     </item>
     <item>
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-      <property name="text">
-       <string>Number of clusters</string>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="num_cluster"/>
+     </spacer>
     </item>
     <item>
      <widget class="QPushButton" name="Random">
@@ -109,9 +105,9 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="QuickHall">
+     <widget class="QPushButton" name="QuickHull">
       <property name="text">
-       <string>Quick Hall</string>
+       <string>Quick Hull</string>
       </property>
      </widget>
     </item>

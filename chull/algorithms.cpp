@@ -147,9 +147,9 @@ void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s,
 
     for(int i = 0 ; i < points.size() ; i++)
     {
-        int result = algorithms::getPosition(points[i],points[s],points[e]);
+        int result = getPosition(points[i],points[s],points[e]);
         if (result ==0) {
-            double dist = 0; //todo
+            double dist = getPointLineDist(points[i],points[s],points[e]);
             if (dist > dmax){
                 imax = i;
                 dmax = dist;
@@ -171,15 +171,116 @@ void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s,
 
     }
 
+}
 
+double algorithms::getPointLineDist(QPoint &a, QPoint &p1, QPoint &p2)
+{
+    double xa=a.x();
+    double ya=a.y();
 
+    double x1=p1.x();
+    double y1=p1.y();
 
+    double x2=p2.x();
+    double y2=p2.y();
 
+    double dist = algorithms::distance(p1,p2);
+    double value = xa*(y1-y2)+x1*(y2-ya)+x2*(ya-y1);
+
+    double distance = value/dist;
+
+    return distance;
 }
 
 
+std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
+{
+    //Amount of  points
+    int m = points.size();
 
+    std::vector<QPoint> ch;
 
+    //Lists of previous and next indices
+    std::vector<int> p(m);
+    std::vector<int> n(m);
+
+    //Sort by x
+    std::sort(points.begin(),points.end(),sortByXAsc());
+
+    // initial approximation of CH
+    p[0]=1;
+    p[1]=0;
+    n[0]=1;
+    n[1]=0;
+
+    //Position of q[2] according to q[0], q[1]
+    int OurPointIsOnLeftSide = getPosition(points[2],points[0],points[1]);
+    if( OurPointIsOnLeftSide )
+    {
+        n[1] = 2;
+        n[2] = 0;
+        p[2] = 1;
+        p[0] = 2;
+
+    }else{
+        n[0] = 2;
+        n[2] = 1;
+        p[2] = 0;
+        p[1] = 2 ;
+    }
+
+    for(int i = 3; i<m; i++){
+
+        //Point q[i] in upper half-plane
+        //Connect q[i] with its previous and next points
+        if(points[i].y()>points[i-1].y())
+        {
+            p[i] = i-1;
+            n[i] = n[i-1];
+
+        }
+        //Point q[i] in lower half-plane
+        //Connect q[i] with its previous and next points
+        else{
+            p[i]=p[i-1];
+            n[i]=i-1;
+        }
+
+        //Connect point next to q[i] with q[i]
+        //Connect point previous to q[i] with q[i]
+        n[p[i]]=i;
+        p[n[i]]=i;
+
+        //Find upper tangent
+        while(getPosition(points[n[n[i]]], points[i], points[n[i]]) == 0)
+        {
+            n[i]=n[n[i]];
+            p[n[n[i]]]=i;
+
+        }
+
+        //Find lower tangent
+        while(getPosition(points[p[p[i]]], points[p[i]],points[i]) == 0)
+        {
+            p[i]=p[p[i]];
+            n[p[p[i]]]=i;
+
+        }
+    }
+
+    // add the left most point to ch
+    ch.push_back(points[0]);
+
+    // convert circular list to list of points
+    int index = n[0];
+
+    do{
+        ch.push_back(points[index]);
+        index = n[index];
+    }while(index != 0);
+
+    return ch;
+}
 
 
 

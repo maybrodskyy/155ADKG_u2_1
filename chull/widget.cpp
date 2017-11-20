@@ -23,7 +23,7 @@ void Widget::on_Random_clicked()
 int input_numberd=ui->num_rand->text().toInt();
 if(input_numberd<1000 || input_numberd>1000000){
     QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
-close();
+//close();
 }
 
 std::vector<QPoint> pts = ptgenerator::generateRandom(input_numberd);
@@ -53,7 +53,7 @@ void Widget::on_Grid_clicked()
     int input_numberd=ui->num_rand->text().toInt();
     if(input_numberd<1000 || input_numberd>1000000){
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
-    close();
+    //close();
     }
     std::vector<QPoint> pts = ptgenerator::generateGrid(input_numberd);
     ui->Canvas->setPoints(pts);
@@ -65,15 +65,18 @@ void Widget::on_Cluster_clicked()
     int input_numberd=ui->num_rand->text().toInt();
     if(input_numberd<1000 || input_numberd>1000000){
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
-    close();
+    //close();
     }
 
-    int input_num_clu=ui->num_cluster->text().toInt();
+
+    //int input_num_clu=ui->num_cluster->text().toInt();
+    /*
     // nezaznamenal jsem limity rozmery ctvercu
     if(input_num_clu<9 || input_num_clu>1001){
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of clusters has to be in interval between 10 and 1000"));
     close();
     }
+    */
 
     std::vector<QPoint> pts = ptgenerator::generateCluster(input_numberd);
     ui->Canvas->setPoints(pts);
@@ -88,7 +91,7 @@ void Widget::on_Jarvis_clicked()
     time_bitch.start();
 }
 
-void Widget::on_QuickHall_clicked()
+void Widget::on_QuickHull_clicked()
 {
     ui->Canvas->repaint();
 

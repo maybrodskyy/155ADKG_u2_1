@@ -24,7 +24,7 @@ private slots:
 
     void on_Jarvis_clicked();
 
-    void on_QuickHall_clicked();
+    void on_QuickHull_clicked();
 
     void on_Incremental_clicked();
 
