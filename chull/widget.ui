@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>932</width>
-    <height>641</height>
+    <height>642</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -38,7 +38,7 @@
        <verstretch>1</verstretch>
       </sizepolicy>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
       <item>
        <widget class="QLabel" name="label">
         <property name="font">
@@ -49,7 +49,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Number of points</string>
+         <string>Number of points:</string>
         </property>
        </widget>
       </item>
@@ -138,9 +138,23 @@
        </spacer>
       </item>
       <item>
+       <widget class="QPushButton" name="clear">
+        <property name="text">
+         <string>Clear All</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QLabel" name="time">
         <property name="text">
-         <string>Time [sec]</string>
+         <string>Time [sec]:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="time_output">
+        <property name="text">
+         <string/>
         </property>
        </widget>
       </item>

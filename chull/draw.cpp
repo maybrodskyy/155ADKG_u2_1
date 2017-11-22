@@ -39,9 +39,15 @@ void draw::paintEvent(QPaintEvent *e)
 
 }
 
-void draw::clear()
+void draw::clearAll()
 {
     points.clear();
+    hull.clear();
+    repaint();
+}
+
+void draw::clearHull()
+{
     hull.clear();
     repaint();
 }

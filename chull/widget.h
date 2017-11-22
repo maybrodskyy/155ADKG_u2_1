@@ -28,6 +28,8 @@ private slots:
 
     void on_Incremental_clicked();
 
+    void on_clear_clicked();
+
 private:
     Ui::Widget *ui;
 };
