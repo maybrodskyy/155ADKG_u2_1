@@ -37,7 +37,6 @@ double algorithms::getAngle(QPoint &p1,QPoint &p2,QPoint &p3, QPoint &p4)
     double normU = sqrt(ux * ux + uy * uy);
     double normV = sqrt(vx * vx + vy * vy);
 
-    double test =  (acos(s/(normU * normV)))*(180/M_PI);
     return fabs(acos(s/(normU * normV)))*(180/M_PI);
 }
 
@@ -70,7 +69,8 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint>points)
         double amax = 0;
 
         //Find max angle
-        for(int i=0;i<points.size();i++){
+        for(int i=0;i<points.size();i++)
+        {
 
             double angle=getAngle(pj,points[i],pj,pj_1);
 
@@ -100,12 +100,14 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint>points)
         pj_1 = pj;
         pj = points[imax];
 
-
     }
     while(pj != q);
+
+    return ch;
 }
 
-std::vector<QPoint> algorithms::qhull(std::vector<QPoint> points){
+std::vector<QPoint> algorithms::qhull(std::vector<QPoint> points)
+{
     std::vector<QPoint> ch;
     std::vector<QPoint> uh;
     std::vector<QPoint> lh;
@@ -137,6 +139,16 @@ std::vector<QPoint> algorithms::qhull(std::vector<QPoint> points){
            lh.push_back(points[i]);
         }
     }
+
+    //Process upper hull
+    ch.push_back(q3);
+    qh(uh, ch, 1, 0);
+
+    //Process lower hull
+    ch.push_back(q1);
+    qh(lh, ch, 0, 1);
+
+    return ch;
 }
 
 void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s, int e)
@@ -167,8 +179,6 @@ void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s,
 
         //Second segment
         qh(points, ch, imax, e);
-
-
     }
 
 }
@@ -207,22 +217,24 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
     //Sort by x
     std::sort(points.begin(),points.end(),sortByXAsc());
 
-    // initial approximation of CH
+    //Initial approximation of CH
     p[0]=1;
     p[1]=0;
     n[0]=1;
     n[1]=0;
 
     //Position of q[2] according to q[0], q[1]
-    int OurPointIsOnLeftSide = getPosition(points[2],points[0],points[1]);
-    if( OurPointIsOnLeftSide )
+    if( getPosition(points[2],points[0],points[1]) == 1 )
     {
         n[1] = 2;
         n[2] = 0;
         p[2] = 1;
         p[0] = 2;
 
-    }else{
+    }
+
+    else
+    {
         n[0] = 2;
         n[2] = 1;
         p[2] = 0;
@@ -241,7 +253,8 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
         }
         //Point q[i] in lower half-plane
         //Connect q[i] with its previous and next points
-        else{
+        else
+        {
             p[i]=p[i-1];
             n[i]=i-1;
         }
@@ -254,27 +267,26 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
         //Find upper tangent
         while(getPosition(points[n[n[i]]], points[i], points[n[i]]) == 0)
         {
-            n[i]=n[n[i]];
             p[n[n[i]]]=i;
-
+            n[i]=n[n[i]];
         }
 
         //Find lower tangent
         while(getPosition(points[p[p[i]]], points[p[i]],points[i]) == 0)
         {
-            p[i]=p[p[i]];
             n[p[p[i]]]=i;
-
+            p[i]=p[p[i]];
         }
     }
 
-    // add the left most point to ch
+    //Add the left most point to ch
     ch.push_back(points[0]);
 
-    // convert circular list to list of points
+    //Convert circular list to list of points
     int index = n[0];
 
-    do{
+    do
+    {
         ch.push_back(points[index]);
         index = n[index];
     }while(index != 0);

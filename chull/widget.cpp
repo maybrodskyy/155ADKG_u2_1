@@ -22,29 +22,19 @@ Widget::~Widget()
 void Widget::on_Random_clicked()
 {
 int input_numberd=ui->num_rand->text().toInt();
+//comment out for testing
+/*
 if(input_numberd<1000 || input_numberd>1000000){
     QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
-//close();
 }
+*/
 
 std::vector<QPoint> pts = ptgenerator::generateRandom(input_numberd);
 ui->Canvas->setPoints(pts);
 ui->Canvas->repaint();
 
 // zkousel jsem generaci -nezkousej ve widgetu plz :D
-/*
-std::vector<QPoint> random_points;
-int x,y;
 
-for(int i = 0; i < input_numberd; i++)
-{
-    x = qrand() % 600 + 10;
-    y = qrand() % 200 + 10;
-    QPoint point(x, y);
-
-    random_points.push_back(point);
-}
-*/
 
 }
 
@@ -52,10 +42,11 @@ for(int i = 0; i < input_numberd; i++)
 void Widget::on_Grid_clicked()
 {
     int input_numberd=ui->num_rand->text().toInt();
+   /*
     if(input_numberd<1000 || input_numberd>1000000){
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
-    //close();
     }
+    */
     std::vector<QPoint> pts = ptgenerator::generateGrid(input_numberd);
     ui->Canvas->setPoints(pts);
     ui->Canvas->repaint();
@@ -64,10 +55,12 @@ void Widget::on_Grid_clicked()
 void Widget::on_Cluster_clicked()
 {
     int input_numberd=ui->num_rand->text().toInt();
+    /*
     if(input_numberd<1000 || input_numberd>1000000){
         QMessageBox::information(this,tr("WRONG NUMBER"),tr("the number of points has to be in interval between 1000 and 1000000"));
     //close();
     }
+    */
 
 
     //int input_num_clu=ui->num_cluster->text().toInt();
@@ -91,23 +84,29 @@ void Widget::on_Jarvis_clicked()
     ui->Canvas->setHull(hull);
     ui->Canvas->repaint();
 
-    QElapsedTimer time_bitch;
-    time_bitch.start();
+    //QElapsedTimer time_bitch;
+    //time_bitch.start();
 }
 
 void Widget::on_QuickHull_clicked()
 {
+    std::vector<QPoint> pts = ui->Canvas->getPoints();
+    std::vector<QPoint> hull = algorithms::qhull(pts);
+    ui->Canvas->setHull(hull);
     ui->Canvas->repaint();
 
-    QElapsedTimer time_bitch;
-    time_bitch.start();
+    //QElapsedTimer time_bitch;
+    //time_bitch.start();
 
 }
 
 void Widget::on_Incremental_clicked()
 {
+    std::vector<QPoint> pts = ui->Canvas->getPoints();
+    std::vector<QPoint> hull = algorithms::incr(pts);
+    ui->Canvas->setHull(hull);
     ui->Canvas->repaint();
 
-    QElapsedTimer time_bitch;
-    time_bitch.start();
+    //QElapsedTimer time_bitch;
+    //time_bitch.start();
 }
