@@ -1,6 +1,7 @@
 #include "algorithms.h"
 #include "sortbyxasc.h"
 #include "sortbyyasc.h"
+#include <qmath.h>
 
 algorithms::algorithms()
 {
@@ -232,13 +233,6 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
         std::sort(points.begin(), points.end(), sortByXAsc());
         points.erase(points.begin(),points.begin()+j);
     }
-//kopcim
-
-
-
-
-
-
     //Amount of  points
     int m = points.size();
 
@@ -331,10 +325,45 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
 }
 
 
+std::vector<QPoint> algorithms::grscan(std::vector<QPoint>points)
+{
+    std::vector<QPoint> ch;
+    int amin=2*3.14159265;
+
+    // Sort points by Y
+    std::sort(points.begin(),points.end(),sortByYAsc());
+
+    //Find pivot
+    QPoint qy = points[0];
+    QPoint p_1 = points[1];
 
 
+    //Ad pivot and other 2 points
+    ch.push_back(q);
+    ch.push_back(p_1);
 
+       /* for(int i=1;i<points.size()-1;i++)
+        {
+            for(int j=2;j<points.size()-2;i++)
+            {
 
+            for(int j=2;j<points.size()-2;i++)
+            {
+            double angle=getAngle(q,points[i],q,points[j]);
+
+            //Common point
+            if(angle < amin)
+            {
+                amin = angle;
+                ch.push_back(points[i]);
+            }
+            }
+            if(amin<amin2){
+                amin=amin
+            }
+*/
+
+}
 
 
 

@@ -42,6 +42,7 @@ public:
     QPushButton *Jarvis;
     QPushButton *QuickHull;
     QPushButton *Incremental;
+    QPushButton *pushButton;
     QSpacerItem *verticalSpacer_3;
     QPushButton *clear;
     QLabel *time;
@@ -132,6 +133,11 @@ public:
 
         verticalLayout->addWidget(Incremental);
 
+        pushButton = new QPushButton(widget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        verticalLayout->addWidget(pushButton);
+
         verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout->addItem(verticalSpacer_3);
@@ -170,6 +176,7 @@ public:
         Jarvis->setText(QApplication::translate("Widget", "Jarvis", Q_NULLPTR));
         QuickHull->setText(QApplication::translate("Widget", "Quick Hull", Q_NULLPTR));
         Incremental->setText(QApplication::translate("Widget", "Incremental", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("Widget", "Graham Scan", Q_NULLPTR));
         clear->setText(QApplication::translate("Widget", "Clear All", Q_NULLPTR));
         time->setText(QApplication::translate("Widget", "Time [sec]:", Q_NULLPTR));
         time_output->setText(QString());

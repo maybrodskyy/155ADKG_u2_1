@@ -38,7 +38,7 @@
        <verstretch>1</verstretch>
       </sizepolicy>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
       <item>
        <widget class="QLabel" name="label">
         <property name="font">
@@ -121,6 +121,13 @@
        <widget class="QPushButton" name="Incremental">
         <property name="text">
          <string>Incremental</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Graham Scan</string>
         </property>
        </widget>
       </item>

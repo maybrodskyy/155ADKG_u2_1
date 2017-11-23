@@ -126,3 +126,17 @@ void Widget::on_clear_clicked()
 {
     ui->Canvas->clearAll();
 }
+
+void Widget::on_pushButton_clicked()
+{
+    ui->Canvas->clearHull();
+    std::vector<QPoint> pts = ui->Canvas->getPoints();
+    QElapsedTimer timer;
+    timer.start();
+    std::vector<QPoint> hull = algorithms::grscan(pts);
+    int time_elapsed = timer.elapsed();
+    ui->Canvas->setHull(hull);
+    ui->Canvas->repaint();
+    ui->time_output->setText(QString::number(time_elapsed));
+
+}
