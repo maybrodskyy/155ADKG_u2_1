@@ -334,7 +334,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint>points)
     std::sort(points.begin(),points.end(),sortByYAsc());
 
     //Find pivot
-    QPoint qy = points[0];
+    QPoint q = points[0];
     QPoint p_1 = points[1];
 
 

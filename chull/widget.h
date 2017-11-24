@@ -3,6 +3,7 @@
 
 #include <QWidget>
 
+
 namespace Ui {
 class Widget;
 }
@@ -30,7 +31,11 @@ private slots:
 
     void on_clear_clicked();
 
-    void on_pushButton_clicked();
+    void on_Graham_clicked();
+
+    void on_graphCheckBox_clicked(bool ticked);
+
+    void on_generateGraph_clicked();
 
 private:
     Ui::Widget *ui;

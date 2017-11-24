@@ -30,7 +30,8 @@ SOURCES += \
     sortbyyasc.cpp \
     sortbyxasc.cpp \
     draw.cpp \
-    ptgenerator.cpp
+    ptgenerator.cpp \
+    graphmode.cpp
 
 HEADERS += \
         widget.h \
@@ -38,7 +39,8 @@ HEADERS += \
     sortbyyasc.h \
     sortbyxasc.h \
     draw.h \
-    ptgenerator.h
+    ptgenerator.h \
+    graphmode.h
 
 FORMS += \
         widget.ui
