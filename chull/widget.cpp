@@ -173,6 +173,8 @@ void Widget::on_graphCheckBox_clicked(bool ticked)
         ui->num_rand->setDisabled(ticked);
         ui->generateGraph->setEnabled(ticked);
         ui->textLabel->setEnabled(ticked);
+        ui->hullLabel->setEnabled(ticked);
+        ui->pointLabel->setEnabled(ticked);
 }
 
 void Widget::on_clear_clicked()

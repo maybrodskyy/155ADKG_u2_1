@@ -176,6 +176,9 @@
       </item>
       <item>
        <widget class="QLabel" name="pointLabel">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -183,6 +186,9 @@
       </item>
       <item>
        <widget class="QLabel" name="hullLabel">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string/>
         </property>
