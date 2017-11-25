@@ -8,7 +8,7 @@ class graphMode : public Widget
     Q_OBJECT
 public:
     explicit graphMode(Widget *parent = nullptr);
-    void Process(std::vector<QPoint>(*f)(std::vector<QPoint>));
+    void Process(int p, int a, QSize window_size);
 
 signals:
 
