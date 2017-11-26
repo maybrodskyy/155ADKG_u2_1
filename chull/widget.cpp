@@ -15,6 +15,9 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     std::srand(std::time(0));
+#ifndef GRAHAM
+    ui->Graham->setDisabled(true);
+#endif
 }
 
 Widget::~Widget()
@@ -172,8 +175,10 @@ void Widget::on_Incremental_clicked()
     //time_bitch.start();
 }
 
+
 void Widget::on_Graham_clicked()
 {
+    #ifdef GRAHAM
     if(ui->graphCheckBox->checkState()){
         ui->walkthroughLabel->setText("Click the Generate Graph button and save the results!");
         ui->hullLabel->setText("Graham");
@@ -190,8 +195,10 @@ void Widget::on_Graham_clicked()
         ui->Canvas->repaint();
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
     }
+    #endif
 
 }
+
 
 void Widget::on_graphCheckBox_clicked(bool ticked)
 {
@@ -214,6 +221,7 @@ void Widget::on_clear_clicked()
 
 void Widget::on_generateGraph_clicked()
 {
+
     QSize s = ui->Canvas->size(); //window size
 
     graphMode* generateGraph = new graphMode();
@@ -223,11 +231,10 @@ void Widget::on_generateGraph_clicked()
     QMainWindow* window = new QMainWindow();
     window->setAttribute(Qt::WA_DeleteOnClose,true);
     window->setCentralWidget(view);
-    window->resize(400,300);
+    window->resize(800,300);
     window->show();
 
     delete generateGraph;
-    //ui->saveGraph->setEnabled(true);
 
     QString filename = QFileDialog::getSaveFileName(this, "Save graph","C:\\","PDF files(*.pdf);;Text files (*.pdf)");
     QPdfWriter pdfWriter(filename);

@@ -146,6 +146,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Graham">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="text">
          <string>Graham Scan</string>
         </property>

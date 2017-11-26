@@ -327,6 +327,7 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 
 std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 {
+    #ifdef GRAHAM
     std::vector<QPoint> ch;
     int amin=2*3.14159265;
 
@@ -362,8 +363,12 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
                 amin=amin
             }
 */
-
+#endif
+#ifndef GRAHAM
+    return std::vector<QPoint>();
+#endif
 }
+
 
 
 
