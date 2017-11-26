@@ -49,8 +49,6 @@ void Widget::on_Random_clicked()
     ui->walkthroughLabel->setText("Now select the convex hull algorithm.");
 
 // zkousel jsem generaci -nezkousej ve widgetu plz :D
-
-
 }
 
 
@@ -219,9 +217,12 @@ void Widget::on_generateGraph_clicked()
     QtCharts::QChartView *view = generateGraph->Graph();
 
     QMainWindow* window = new QMainWindow();
+    window->setAttribute(Qt::WA_DeleteOnClose,true);
     window->setCentralWidget(view);
     window->resize(400,300);
     window->show();
+
+    delete generateGraph;
 
     /*
     QString filename = QString::fromStdString("C:/Users/PMM/Documents/algoritmy/u2/155ADKG_u2_1/graph.pdf");
