@@ -3,13 +3,14 @@
 #include <QMessageBox>
 #include <QtCharts/QChartView>
 #include <QtCharts/QLineSeries>
+#include <functional>
 
 #include "graphmode.h"
 //#include "draw.h"
 #include "ptgenerator.h"
 #include "algorithms.h"
 #include "draw.h"
-#include <iostream>
+
 
 graphMode::graphMode(Widget *parent) : Widget(parent)
 {
@@ -19,16 +20,17 @@ void graphMode::Process(int &p, int &a, QSize &window_size){ //point-generator a
     int k = 1000; //for the sake of readable code
     n_points = {1*k,5*k,10*k,25*k,50*k,100*k,250*k,500*k,750*k,1000*k}; //how many points were there
     //initialize a function pointer
-    std::vector<QPoint> (*point_generator)(int&, QSize&);
     //determine which point-generator to use
+    std::function<std::vector<QPoint>(int&, QSize&)> point_generator = NULL;
     switch(p){
         case 1 : point_generator = ptgenerator::generateRandom;
         case 2 : point_generator = ptgenerator::generateGrid;
         case 3 : point_generator = ptgenerator::generateCluster;
     }
+    //qDebug()<<"p"<<p;
 
     //initialize a function pointer
-    std::vector<QPoint> (*algorithm)(std::vector<QPoint> &);
+    std::function<std::vector<QPoint>(std::vector<QPoint>&)> algorithm = NULL;
     //determine which algorithm to use
     switch(a){
         case 1 : algorithm = algorithms::jarvisCH;
@@ -36,9 +38,11 @@ void graphMode::Process(int &p, int &a, QSize &window_size){ //point-generator a
         case 3 : algorithm = algorithms::incr;
         case 4 : algorithm = algorithms::grscan;
     }
+    //qDebug()<<"a"<<a;
 
     //measure the time it takes to complete the selected algorithm (avg of 10)
     for(int n : n_points){ //for every n in n points
+        //qDebug()<<"n"<<n;
         std::vector<QPoint> points = point_generator(n,window_size);
         double sum_time = 0;
         for(int i = 0; i < 10; i++){
