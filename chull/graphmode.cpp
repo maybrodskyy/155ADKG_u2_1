@@ -3,7 +3,6 @@
 #include <QMessageBox>
 #include <QtCharts/QChartView>
 #include <QtCharts/QLineSeries>
-#include <QtWidgets/QMainWindow>
 
 #include "graphmode.h"
 //#include "draw.h"
@@ -53,12 +52,9 @@ void graphMode::Process(int p, int a, QSize window_size){ //point-generator and 
         }
         times.push_back(sum_time/10);
     }
-
-    //now draw graphs for that magic
-    Graph(n_points, times);
 }
 
-void graphMode::Graph(std::vector<int> n_points, std::vector<double> times)
+QtCharts::QChartView graphMode::Graph()
 {
     QtCharts::QLineSeries *series = new QtCharts::QLineSeries();
     for(int i=0;i<=n_points.size();i++){
@@ -73,9 +69,5 @@ void graphMode::Graph(std::vector<int> n_points, std::vector<double> times)
     QtCharts::QChartView *view = new QtCharts::QChartView(chart);
     view->setRenderHint(QPainter::Antialiasing);
 
-    QMainWindow *window = new QMainWindow(this);
-    window->setCentralWidget(view);
-    window->resize(400,300);
-    window->show();
-
+    return view;
 }

@@ -185,6 +185,22 @@ void Widget::on_clear_clicked()
 void Widget::on_generateGraph_clicked()
 {
     QSize s = ui->Canvas->size(); //window size
+
     graphMode generateGraph;
     generateGraph.Process(point_type, algorithm_type,s);
+    QtCharts::QChartView view = generateGraph.Graph();
+
+    QMainWindow window; //= new QWindow();
+    window.setCentralWidget(view);
+    window.resize(400,300);
+    window.show();
+
+    /*
+    QString filename = QString::fromStdString("C:/Users/PMM/Documents/algoritmy/u2/155ADKG_u2_1/graph.pdf");
+    QPdfWriter pdfWriter(filename);
+    pdfWriter.setPageSizeMM(window.size());
+    QPainter painter(&pdfWriter);
+    view.render(&painter);
+    painter.end();
+    */
 }
