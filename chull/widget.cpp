@@ -1,14 +1,13 @@
-#include "widget.h"
-#include "ui_widget.h"
 #include <QMessageBox>
-//#include "QDebug"
-#include "graphmode.h"
+#include <QFileDialog>
 
-//#include <QElapsedTimer>
-#include <ptgenerator.h>
-#include <algorithms.h>
 #include <ctime>
 
+#include "ptgenerator.h"
+#include "algorithms.h"
+#include "graphmode.h"
+#include "widget.h"
+#include "ui_widget.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -206,6 +205,11 @@ void Widget::on_graphCheckBox_clicked(bool ticked)
 void Widget::on_clear_clicked()
 {
     ui->Canvas->clearAll();
+    ui->time_output->clear();
+    ui->walkthroughLabel->clear();
+    ui->hullLabel->clear();
+    ui->pointLabel->clear();
+    ui->graphCheckBox->setEnabled(false);
 }
 
 void Widget::on_generateGraph_clicked()
@@ -223,13 +227,12 @@ void Widget::on_generateGraph_clicked()
     window->show();
 
     delete generateGraph;
+    //ui->saveGraph->setEnabled(true);
 
-    /*
-    QString filename = QString::fromStdString("C:/Users/PMM/Documents/algoritmy/u2/155ADKG_u2_1/graph.pdf");
+    QString filename = QFileDialog::getSaveFileName(this, "Save graph","C:\\","PDF files(*.pdf);;Text files (*.pdf)");
     QPdfWriter pdfWriter(filename);
-    pdfWriter.setPageSizeMM(window.size());
+    pdfWriter.setPageSizeMM(window->size());
     QPainter painter(&pdfWriter);
-    view.render(&painter);
+    view->render(&painter);
     painter.end();
-    */
 }
