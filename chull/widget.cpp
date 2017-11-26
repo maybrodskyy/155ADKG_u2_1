@@ -1,6 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
-//#include <QMessageBox>
+#include <QMessageBox>
 //#include "QDebug"
 #include "graphmode.h"
 
@@ -20,7 +20,7 @@ Widget::Widget(QWidget *parent) :
 
 Widget::~Widget()
 {
-    delete ui;
+    delete ui;;
 }
 
 
@@ -31,8 +31,16 @@ void Widget::on_Random_clicked()
         point_type = 1;
     }
     else{
-        ui->Canvas->clearHull();
         int input_numberd=ui->num_rand->text().toInt();
+        if(input_numberd<=0){
+            error_flag = true;
+            QMessageBox *msg = new QMessageBox();
+            msgSettings(msg);
+            msg->show();
+            return;
+        }
+        error_flag = false;
+        ui->Canvas->clearHull();
         QSize s = ui->Canvas->size();
         std::vector<QPoint> pts = ptgenerator::generateRandom(input_numberd,s);
         ui->Canvas->setPoints(pts);
@@ -53,8 +61,16 @@ void Widget::on_Grid_clicked()
         point_type = 2;
     }
     else{
-        ui->Canvas->clearHull();
         int input_numberd=ui->num_rand->text().toInt();
+        if(input_numberd<=0){
+            error_flag = true;
+            QMessageBox *msg = new QMessageBox();
+            msgSettings(msg);
+            msg->show();
+            return;
+        }
+        error_flag = false;
+        ui->Canvas->clearHull();
         QSize s = ui->Canvas->size();
         std::vector<QPoint> pts = ptgenerator::generateGrid(input_numberd,s);
         ui->Canvas->setPoints(pts);
@@ -70,8 +86,16 @@ void Widget::on_Cluster_clicked()
         point_type = 3;
     }
     else{
-        ui->Canvas->clearHull();
         int input_numberd=ui->num_rand->text().toInt();
+        if(input_numberd<=0){
+            error_flag = true;
+            QMessageBox *msg = new QMessageBox();
+            msgSettings(msg);
+            msg->show();
+            return;
+        }
+        error_flag=0;
+        ui->Canvas->clearHull();
         QSize s = ui->Canvas->size();
         std::vector<QPoint> pts = ptgenerator::generateCluster(input_numberd,s);
         ui->Canvas->setPoints(pts);
@@ -88,6 +112,7 @@ void Widget::on_Jarvis_clicked()
         algorithm_type = 1;
     }
     else{
+        if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
         std::clock_t t_start = std::clock();
@@ -111,6 +136,7 @@ void Widget::on_QuickHull_clicked()
         algorithm_type = 2;
     }
     else{
+        if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
         std::clock_t t_start = std::clock();
@@ -134,6 +160,7 @@ void Widget::on_Incremental_clicked()
         algorithm_type = 3;
     }
     else{
+        if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
         std::clock_t t_start = std::clock();
@@ -156,6 +183,7 @@ void Widget::on_Graham_clicked()
         algorithm_type = 4;
     }
     else{
+        if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
         std::clock_t t_start = std::clock();
@@ -194,7 +222,6 @@ void Widget::on_generateGraph_clicked()
     window->setCentralWidget(view);
     window->resize(400,300);
     window->show();
-
 
     /*
     QString filename = QString::fromStdString("C:/Users/PMM/Documents/algoritmy/u2/155ADKG_u2_1/graph.pdf");

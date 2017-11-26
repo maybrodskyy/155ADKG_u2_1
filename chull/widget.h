@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -41,6 +42,12 @@ private:
     Ui::Widget *ui;
     int point_type; //1 for random, 2 for grid, 3 for cluster
     int algorithm_type; //1 for jarvis, 2 for quickhull, 3 for incremental, 4 for graham
+    int error_flag = true;
+    void msgSettings(QMessageBox *msg){
+        msg->setAttribute(Qt::WA_DeleteOnClose, true);
+        msg->setWindowTitle("Invalid input");
+        msg->setText("Please insert a number greater than 0");
+    }
 };
 
 #endif // WIDGET_H

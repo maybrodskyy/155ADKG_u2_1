@@ -18,7 +18,6 @@ graphMode::graphMode(Widget *parent) : Widget(parent)
 void graphMode::Process(int p, int a, QSize window_size){ //point-generator and algorythm type selected
     int k = 1000; //for the sake of readable code
     n_points = {1*k,5*k,10*k,25*k,50*k,100*k,250*k,500*k,750*k,1000*k}; //how many points were there
-
     //initialize a function pointer
     std::vector<QPoint> (*point_generator)(int, QSize);
     //determine which point-generator to use
@@ -38,11 +37,11 @@ void graphMode::Process(int p, int a, QSize window_size){ //point-generator and 
         case 4 : algorithm = algorithms::grscan;
     }
 
-    //now actually do the magic
+    //measure the time it takes to complete the selected algorithm (avg of 10)
     for(int n : n_points){ //for every n in n points
         std::vector<QPoint> points = point_generator(n,window_size);
         double sum_time = 0;
-        for(int i = 0; i < 10; i++){ //do this 10 times
+        for(int i = 0; i < 10; i++){
             std::clock_t start_time = std::clock();
             algorithm(points);
             std::clock_t end_time = std::clock();
