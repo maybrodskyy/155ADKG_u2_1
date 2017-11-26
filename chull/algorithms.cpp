@@ -70,7 +70,7 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint> &points)
         double amax = 0.0;
 
         //Find max angle
-        for(int i=0;i<points.size();i++)
+        for(unsigned int i=0;i<points.size();i++)
         {
 
             double angle=getAngle(pj,points[i],pj,pj_1);
@@ -124,7 +124,7 @@ std::vector<QPoint> algorithms::qhull(std::vector<QPoint> &points)
     lh.push_back(q1);
     lh.push_back(q3);
 
-    for(int i=0; i < points.size(); ++i)
+    for(unsigned int i=0; i < points.size(); ++i)
     {
         int pos = getPosition(points[i],q1,q3);
 
@@ -158,7 +158,7 @@ void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s,
     double dmax = -1;
     int imax = -1;
 
-    for(int i = 0 ; i < points.size() ; i++)
+    for(unsigned  int i = 0 ; i < points.size() ; i++)
     {
         int result = getPosition(points[i],points[s],points[e]);
         if (result ==1) { //0
@@ -218,7 +218,7 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
         std::sort(points.begin(), points.end(), sortByXAsc());
         j=0;
         k=false;
-        for(int i = 0; i < points.size()-1; i++)
+        for(unsigned int i = 0; i < points.size()-1; i++)
         {
             if((abs(points[i].x() - points[i+1].x()) < eps) && (abs(points[i].y() - points[i+1].y()) < eps))
             {

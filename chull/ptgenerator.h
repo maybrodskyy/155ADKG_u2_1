@@ -8,9 +8,9 @@ class ptgenerator
 {
 public:
     ptgenerator();
-    static std::vector<QPoint> generateCluster(int n,QSize size);
-    static std::vector<QPoint> generateRandom(int n,QSize size);
-    static std::vector<QPoint> generateGrid(int n,QSize size);
+    static std::vector<QPoint> generateCluster(int &n,QSize &size);
+    static std::vector<QPoint> generateRandom(int &n,QSize &size);
+    static std::vector<QPoint> generateGrid(int &n,QSize &size);
 
 };
 

@@ -5,13 +5,13 @@ ptgenerator::ptgenerator()
 
 }
 
-std::vector<QPoint> ptgenerator::generateCluster(int n, QSize size){
+std::vector<QPoint> ptgenerator::generateCluster(int &n, QSize &size){
     int num_clusters = n/100;
     int w = size.width();
     int h = size.height(); //window size
     std::vector<QPoint> pts;
     //generate the starting point in each cluster
-    for (unsigned i = 0; i<num_clusters;i++){
+    for (int i = 0; i<num_clusters;i++){
         QPoint master_pt(rand()%w,rand()%h);
         pts.push_back(master_pt);
         //generate points around the starting point
@@ -24,12 +24,12 @@ std::vector<QPoint> ptgenerator::generateCluster(int n, QSize size){
     }
     return pts;
 }
-std::vector<QPoint> ptgenerator::generateRandom(int n,QSize size){
+std::vector<QPoint> ptgenerator::generateRandom(int &n, QSize &size){
     //QSize window_size = Widget::size(); //TODO figure out how to do sizing
     int w = size.width();
     int h = size.height(); //window size
     std::vector<QPoint> pts;
-    for (unsigned i = 0; i<n;i++){
+    for (int i = 0; i<n;i++){
         pts.push_back({rand()%w,rand()%h});
     }
     return pts;
@@ -38,7 +38,7 @@ std::vector<QPoint> ptgenerator::generateRandom(int n,QSize size){
 
 //i tried to implement a diamond-square algorithm but it proved to be too much of a hassle
 //so i decided to go with prime factors instead. go me!
-std::vector<QPoint> ptgenerator::generateGrid(int n, QSize size){
+std::vector<QPoint> ptgenerator::generateGrid(int &n, QSize &size){
     //int w = size.width();
     int h = size.height(); //window size //window size
 

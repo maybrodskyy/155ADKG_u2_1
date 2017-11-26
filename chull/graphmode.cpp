@@ -15,11 +15,11 @@ graphMode::graphMode(Widget *parent) : Widget(parent)
 {
 }
 
-void graphMode::Process(int p, int a, QSize window_size){ //point-generator and algorythm type selected
+void graphMode::Process(int &p, int &a, QSize &window_size){ //point-generator and algorythm type selected
     int k = 1000; //for the sake of readable code
     n_points = {1*k,5*k,10*k,25*k,50*k,100*k,250*k,500*k,750*k,1000*k}; //how many points were there
     //initialize a function pointer
-    std::vector<QPoint> (*point_generator)(int, QSize);
+    std::vector<QPoint> (*point_generator)(int&, QSize&);
     //determine which point-generator to use
     switch(p){
         case 1 : point_generator = ptgenerator::generateRandom;
@@ -63,9 +63,11 @@ QtCharts::QChartView* graphMode::Graph()
     chart ->legend()->hide();
     chart->addSeries(series);
     chart->createDefaultAxes();
+    chart->setAttribute(Qt::WA_DeleteOnClose);
 
     QtCharts::QChartView *view = new QtCharts::QChartView(chart);
     view->setRenderHint(QPainter::Antialiasing);
+    view->setAttribute(Qt::WA_DeleteOnClose);
 
     return view;
 }

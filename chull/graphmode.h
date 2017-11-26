@@ -11,7 +11,7 @@ class graphMode : public Widget
     Q_OBJECT
 public:
     explicit graphMode(Widget *parent = nullptr);
-    void Process(int p, int a, QSize window_size);
+    void Process(int &p, int &a, QSize &window_size);
     QtCharts::QChartView* Graph();
 
 private:
