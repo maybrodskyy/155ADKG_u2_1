@@ -12,7 +12,7 @@ class graphMode : public Widget
 public:
     explicit graphMode(Widget *parent = nullptr);
     void Process(int p, int a, QSize window_size);
-    static QtCharts::QChartView Graph();
+    QtCharts::QChartView* Graph();
 
 private:
 std::vector<int> n_points;

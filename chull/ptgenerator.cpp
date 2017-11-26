@@ -11,7 +11,7 @@ std::vector<QPoint> ptgenerator::generateCluster(int n, QSize size){
     int h = size.height(); //window size
     std::vector<QPoint> pts;
     //generate the starting point in each cluster
-    for (unsigned i = 0; i<num_clusters;i++){
+    for (int i = 0; i<num_clusters;i++){
         QPoint master_pt(rand()%w,rand()%h);
         pts.push_back(master_pt);
         //generate points around the starting point
@@ -29,7 +29,7 @@ std::vector<QPoint> ptgenerator::generateRandom(int n,QSize size){
     int w = size.width();
     int h = size.height(); //window size
     std::vector<QPoint> pts;
-    for (unsigned i = 0; i<n;i++){
+    for (int i = 0; i<n;i++){
         pts.push_back({rand()%w,rand()%h});
     }
     return pts;

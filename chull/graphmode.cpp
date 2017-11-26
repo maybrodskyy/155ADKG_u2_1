@@ -9,17 +9,15 @@
 #include "ptgenerator.h"
 #include "algorithms.h"
 #include "draw.h"
-
+#include <iostream>
 
 graphMode::graphMode(Widget *parent) : Widget(parent)
 {
 }
 
 void graphMode::Process(int p, int a, QSize window_size){ //point-generator and algorythm type selected
-    std::vector<double> times; //the time it took to complete the hull
-
     int k = 1000; //for the sake of readable code
-    std::vector<int> n_points = {1*k,5*k,10*k,25*k,50*k,100*k,250*k,500*k,750*k,1000*k}; //how many points were there
+    n_points = {1*k,5*k,10*k,25*k,50*k,100*k,250*k,500*k,750*k,1000*k}; //how many points were there
 
     //initialize a function pointer
     std::vector<QPoint> (*point_generator)(int, QSize);
@@ -31,7 +29,7 @@ void graphMode::Process(int p, int a, QSize window_size){ //point-generator and 
     }
 
     //initialize a function pointer
-    std::vector<QPoint> (*algorithm)(std::vector<QPoint>);
+    std::vector<QPoint> (*algorithm)(std::vector<QPoint> &);
     //determine which algorithm to use
     switch(a){
         case 1 : algorithm = algorithms::jarvisCH;
@@ -43,21 +41,22 @@ void graphMode::Process(int p, int a, QSize window_size){ //point-generator and 
     //now actually do the magic
     for(int n : n_points){ //for every n in n points
         std::vector<QPoint> points = point_generator(n,window_size);
-        double sum_time;
-        for(int i = 0;i<=10;i++){ //do this 10 times
+        double sum_time = 0;
+        for(int i = 0; i < 10; i++){ //do this 10 times
             std::clock_t start_time = std::clock();
             algorithm(points);
             std::clock_t end_time = std::clock();
-            sum_time += (end_time-start_time);
+            sum_time += (double)(end_time-start_time)/CLOCKS_PER_SEC;
         }
-        times.push_back(sum_time/10);
+
+        times.push_back(sum_time/10.0);
     }
 }
 
-QtCharts::QChartView graphMode::Graph()
+QtCharts::QChartView* graphMode::Graph()
 {
     QtCharts::QLineSeries *series = new QtCharts::QLineSeries();
-    for(int i=0;i<=n_points.size();i++){
+    for(unsigned int i=0; i < n_points.size(); i++){
         series->append(n_points[i],times[i]);
     }
 

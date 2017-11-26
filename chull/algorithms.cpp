@@ -41,7 +41,7 @@ double algorithms::getAngle(QPoint &p1,QPoint &p2,QPoint &p3, QPoint &p4)
     return fabs(acos(s/(normU * normV)))*(180/M_PI);
 }
 
-std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint>points)
+std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint> &points)
 {
     const double AEPS = 1.0e-5;
     std::vector<QPoint> ch;
@@ -70,7 +70,7 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint>points)
         double amax = 0;
 
         //Find max angle
-        for(int i=0;i<points.size();i++)
+        for(unsigned int i=0;i<points.size();i++)
         {
 
             double angle=getAngle(pj,points[i],pj,pj_1);
@@ -107,7 +107,7 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint>points)
     return ch;
 }
 
-std::vector<QPoint> algorithms::qhull(std::vector<QPoint> points)
+std::vector<QPoint> algorithms::qhull(std::vector<QPoint> &points)
 {
     std::vector<QPoint> ch;
     std::vector<QPoint> uh;
@@ -124,7 +124,7 @@ std::vector<QPoint> algorithms::qhull(std::vector<QPoint> points)
     lh.push_back(q1);
     lh.push_back(q3);
 
-    for(int i=0; i < points.size(); ++i)
+    for(unsigned int i=0; i < points.size(); ++i)
     {
         int pos = getPosition(points[i],q1,q3);
 
@@ -158,7 +158,7 @@ void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s,
     double dmax = -1;
     int imax = -1;
 
-    for(int i = 0 ; i < points.size() ; i++)
+    for(unsigned int i = 0 ; i < points.size() ; i++)
     {
         int result = getPosition(points[i],points[s],points[e]);
         if (result ==1) { //0
@@ -204,7 +204,7 @@ double algorithms::getPointLineDist(QPoint &a, QPoint &p1, QPoint &p2)
 }
 
 
-std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
+std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 {
    // elimination of all duplcite points
 
@@ -218,7 +218,7 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
         std::sort(points.begin(), points.end(), sortByXAsc());
         j=0;
         k=false;
-        for(int i = 0; i < points.size()-1; i++)
+        for(unsigned int i = 0; i < points.size()-1; i++)
         {
             if((abs(points[i].x() - points[i+1].x()) < eps) && (abs(points[i].y() - points[i+1].y()) < eps))
             {
@@ -325,7 +325,7 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> points)
 }
 
 
-std::vector<QPoint> algorithms::grscan(std::vector<QPoint>points)
+std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 {
     std::vector<QPoint> ch;
     int amin=2*3.14159265;
