@@ -61,13 +61,13 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint> &points)
 
     //Assign initial points
     QPoint pj = q;
-    QPoint pj_1(s.x(),q.y()); //p(j-1)
+    QPoint pj_1(s.x()-1,q.y()); //p(j-1)
 
 
     do{
         int imax = -1 ;
-        double dmax = 0;
-        double amax = 0;
+        double dmax = 0.0;
+        double amax = 0.0;
 
         //Find max angle
         for(int i=0;i<points.size();i++)

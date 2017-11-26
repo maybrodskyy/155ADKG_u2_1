@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\widget.o
+./release\algorithms.o
+./release\sortbyyasc.o
+./release\sortbyxasc.o
+./release\draw.o
+./release\ptgenerator.o
+./release\graphmode.o
+./release\moc_widget.o
+./release\moc_draw.o
+./release\moc_graphmode.o
+);
