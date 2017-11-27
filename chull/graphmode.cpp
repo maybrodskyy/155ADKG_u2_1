@@ -45,9 +45,9 @@ void graphMode::Process(int &p, int &a, QSize &window_size){ //point-generator a
     //measure the time it takes to complete the selected algorithm (avg of 10)
     for(int n : n_points){ //for every n in n points
         //qDebug()<<"n"<<n;
-        std::vector<QPoint> points = point_generator(n,window_size);
         double sum_time = 0;
         for(int i = 0; i < 10; i++){
+            std::vector<QPoint> points = point_generator(n,window_size);
             std::clock_t start_time = std::clock();
             algorithm(points);
             std::clock_t end_time = std::clock();
