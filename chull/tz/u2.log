@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.11)  27 NOV 2017 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.11)  28 NOV 2017 00:08
 entering extended mode
 **./u2.tex
 (u2.tex
@@ -658,223 +658,164 @@ File: pdf1.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdf1.pdf  used on input line 256. on input line 256.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
  256.
-<pdf2.pdf, id=121, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf2.pdf Graphic file (type pdf)
-<use pdf2.pdf>
-Package pdftex.def Info: pdf2.pdf  used on input line 261. on input line 261.
+<ranj.pdf, id=121, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: ranj.pdf Graphic file (type pdf)
+<use ranj.pdf>
+Package pdftex.def Info: ranj.pdf  used on input line 262. on input line 262.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 261.
-<pdf3.pdf, id=123, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf3.pdf Graphic file (type pdf)
-<use pdf3.pdf>
-Package pdftex.def Info: pdf3.pdf  used on input line 266. on input line 266.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 266.
+ 262.
+ [12
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--270
-
- []
-
-[12
-
- <./pdf1.pdf> <./pdf2.pdf>] [13 <./pdf3.pdf>]
-<pdf4.pdf, id=171, pagebox=cropbox, 2276.505pt x 853.1875pt>
+ <./pdf1.pdf> <./ranj.pdf>]
+<pdf4.pdf, id=152, pagebox=cropbox, 2276.505pt x 853.1875pt>
 File: pdf4.pdf Graphic file (type pdf)
 <use pdf4.pdf>
-Package pdftex.def Info: pdf4.pdf  used on input line 276. on input line 276.
+Package pdftex.def Info: pdf4.pdf  used on input line 271. on input line 271.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 271.
+<rang.pdf, id=154, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: rang.pdf Graphic file (type pdf)
+<use rang.pdf>
+Package pdftex.def Info: rang.pdf  used on input line 276. on input line 276.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
  276.
-<pdf5.pdf, id=173, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf5.pdf Graphic file (type pdf)
-<use pdf5.pdf>
-Package pdftex.def Info: pdf5.pdf  used on input line 281. on input line 281.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 281.
-<pdf6.pdf, id=175, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf6.pdf Graphic file (type pdf)
-<use pdf6.pdf>
-Package pdftex.def Info: pdf6.pdf  used on input line 286. on input line 286.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 286.
- [14
+ [13
 
- <./pdf4.pdf> <./pdf5.pdf>] [15 <./pdf6.pdf>]
-<pdf7.pdf, id=222, pagebox=cropbox, 2276.505pt x 853.1875pt>
+ <./pdf4.pdf> <./rang.pdf>]
+<pdf7.pdf, id=186, pagebox=cropbox, 2276.505pt x 853.1875pt>
 File: pdf7.pdf Graphic file (type pdf)
 <use pdf7.pdf>
-Package pdftex.def Info: pdf7.pdf  used on input line 295. on input line 295.
+Package pdftex.def Info: pdf7.pdf  used on input line 285. on input line 285.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 295.
-<pdf8.pdf, id=224, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf8.pdf Graphic file (type pdf)
-<use pdf8.pdf>
-Package pdftex.def Info: pdf8.pdf  used on input line 300. on input line 300.
+ 285.
+<rani.pdf, id=188, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: rani.pdf Graphic file (type pdf)
+<use rani.pdf>
+Package pdftex.def Info: rani.pdf  used on input line 290. on input line 290.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 300.
-<pdf9.pdf, id=226, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf9.pdf Graphic file (type pdf)
-<use pdf9.pdf>
-Package pdftex.def Info: pdf9.pdf  used on input line 305. on input line 305.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 305.
+ 290.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--309
+Underfull \hbox (badness 10000) in paragraph at lines 281--294
 
  []
 
-[16
+[14
 
- <./pdf7.pdf> <./pdf8.pdf>] [17 <./pdf9.pdf>]
-<pdf10.pdf, id=273, pagebox=cropbox, 2276.505pt x 853.1875pt>
+ <./pdf7.pdf> <./rani.pdf>]
+<pdf10.pdf, id=219, pagebox=cropbox, 2276.505pt x 853.1875pt>
 File: pdf10.pdf Graphic file (type pdf)
 <use pdf10.pdf>
-Package pdftex.def Info: pdf10.pdf  used on input line 316. on input line 316.
+Package pdftex.def Info: pdf10.pdf  used on input line 301. on input line 301.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 301.
+<grj.pdf, id=221, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: grj.pdf Graphic file (type pdf)
+<use grj.pdf>
+Package pdftex.def Info: grj.pdf  used on input line 306. on input line 306.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 306.
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--310
+
+ []
+
+[15
+
+ <./pdf10.pdf> <./grj.pdf>]
+<pdf13.pdf, id=252, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: pdf13.pdf Graphic file (type pdf)
+<use pdf13.pdf>
+Package pdftex.def Info: pdf13.pdf  used on input line 316. on input line 316.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
  316.
-<pdf11.pdf, id=275, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf11.pdf Graphic file (type pdf)
-<use pdf11.pdf>
-Package pdftex.def Info: pdf11.pdf  used on input line 321. on input line 321.
+<grq.pdf, id=254, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: grq.pdf Graphic file (type pdf)
+<use grq.pdf>
+Package pdftex.def Info: grq.pdf  used on input line 321. on input line 321.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
  321.
-<pdf12.pdf, id=277, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf12.pdf Graphic file (type pdf)
-<use pdf12.pdf>
-Package pdftex.def Info: pdf12.pdf  used on input line 326. on input line 326.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 326.
+ [16
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--330
+ <./pdf13.pdf> <./grq.pdf>]
+<pdf16.pdf, id=285, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: pdf16.pdf Graphic file (type pdf)
+<use pdf16.pdf>
+Package pdftex.def Info: pdf16.pdf  used on input line 330. on input line 330.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 330.
+<gri.pdf, id=287, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: gri.pdf Graphic file (type pdf)
+<use gri.pdf>
+Package pdftex.def Info: gri.pdf  used on input line 335. on input line 335.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 335.
+ [17
+
+ <./pdf16.pdf> <./gri.pdf>]
+<pdf19.pdf, id=318, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: pdf19.pdf Graphic file (type pdf)
+<use pdf19.pdf>
+Package pdftex.def Info: pdf19.pdf  used on input line 347. on input line 347.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 347.
+<clj.pdf, id=320, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: clj.pdf Graphic file (type pdf)
+<use clj.pdf>
+Package pdftex.def Info: clj.pdf  used on input line 352. on input line 352.
+Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
+ 352.
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--356
 
  []
 
 [18
 
- <./pdf10.pdf> <./pdf11.pdf>] [19 <./pdf12.pdf>]
-<pdf13.pdf, id=325, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf13.pdf Graphic file (type pdf)
-<use pdf13.pdf>
-Package pdftex.def Info: pdf13.pdf  used on input line 336. on input line 336.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 336.
-<pdf14.pdf, id=327, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf14.pdf Graphic file (type pdf)
-<use pdf14.pdf>
-Package pdftex.def Info: pdf14.pdf  used on input line 341. on input line 341.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 341.
-<pdf15.pdf, id=329, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf15.pdf Graphic file (type pdf)
-<use pdf15.pdf>
-Package pdftex.def Info: pdf15.pdf  used on input line 346. on input line 346.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 346.
- [20
-
- <./pdf13.pdf> <./pdf14.pdf>] [21 <./pdf15.pdf>]
-<pdf16.pdf, id=376, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf16.pdf Graphic file (type pdf)
-<use pdf16.pdf>
-Package pdftex.def Info: pdf16.pdf  used on input line 355. on input line 355.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 355.
-<pdf17.pdf, id=378, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf17.pdf Graphic file (type pdf)
-<use pdf17.pdf>
-Package pdftex.def Info: pdf17.pdf  used on input line 360. on input line 360.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 360.
-<pdf18.pdf, id=380, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf18.pdf Graphic file (type pdf)
-<use pdf18.pdf>
-Package pdftex.def Info: pdf18.pdf  used on input line 365. on input line 365.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 365.
- [22
-
- <./pdf16.pdf> <./pdf17.pdf>] [23 <./pdf18.pdf>]
-<pdf19.pdf, id=427, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf19.pdf Graphic file (type pdf)
-<use pdf19.pdf>
-Package pdftex.def Info: pdf19.pdf  used on input line 377. on input line 377.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 377.
-<pdf20.pdf, id=429, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf20.pdf Graphic file (type pdf)
-<use pdf20.pdf>
-Package pdftex.def Info: pdf20.pdf  used on input line 382. on input line 382.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 382.
-<pdf21.pdf, id=431, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf21.pdf Graphic file (type pdf)
-<use pdf21.pdf>
-Package pdftex.def Info: pdf21.pdf  used on input line 387. on input line 387.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 387.
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--391
-
- []
-
-[24
-
- <./pdf19.pdf> <./pdf20.pdf>] [25 <./pdf21.pdf>]
-<pdf22.pdf, id=479, pagebox=cropbox, 2276.505pt x 853.1875pt>
+ <./pdf19.pdf> <./clj.pdf>]
+<pdf22.pdf, id=351, pagebox=cropbox, 2276.505pt x 853.1875pt>
 File: pdf22.pdf Graphic file (type pdf)
 <use pdf22.pdf>
-Package pdftex.def Info: pdf22.pdf  used on input line 397. on input line 397.
+Package pdftex.def Info: pdf22.pdf  used on input line 362. on input line 362.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 397.
-<pdf23.pdf, id=481, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf23.pdf Graphic file (type pdf)
-<use pdf23.pdf>
-Package pdftex.def Info: pdf23.pdf  used on input line 402. on input line 402.
+ 362.
+<clq.pdf, id=353, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: clq.pdf Graphic file (type pdf)
+<use clq.pdf>
+Package pdftex.def Info: clq.pdf  used on input line 367. on input line 367.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 402.
-<pdf24.pdf, id=483, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf24.pdf Graphic file (type pdf)
-<use pdf24.pdf>
-Package pdftex.def Info: pdf24.pdf  used on input line 407. on input line 407.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 407.
- [26
+ 367.
+ [19
 
- <./pdf22.pdf> <./pdf23.pdf>] [27 <./pdf24.pdf>]
-<pdf25.pdf, id=530, pagebox=cropbox, 2276.505pt x 853.1875pt>
+ <./pdf22.pdf> <./clq.pdf>]
+<pdf25.pdf, id=385, pagebox=cropbox, 2276.505pt x 853.1875pt>
 File: pdf25.pdf Graphic file (type pdf)
 <use pdf25.pdf>
-Package pdftex.def Info: pdf25.pdf  used on input line 416. on input line 416.
+Package pdftex.def Info: pdf25.pdf  used on input line 376. on input line 376.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 416.
-<pdf26.pdf, id=532, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf26.pdf Graphic file (type pdf)
-<use pdf26.pdf>
-Package pdftex.def Info: pdf26.pdf  used on input line 421. on input line 421.
+ 376.
+<cli.pdf, id=387, pagebox=cropbox, 2276.505pt x 853.1875pt>
+File: cli.pdf Graphic file (type pdf)
+<use cli.pdf>
+Package pdftex.def Info: cli.pdf  used on input line 381. on input line 381.
 Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 421.
-<pdf27.pdf, id=534, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf27.pdf Graphic file (type pdf)
-<use pdf27.pdf>
-Package pdftex.def Info: pdf27.pdf  used on input line 426. on input line 426.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 426.
- [28
+ 381.
+ [20
 
- <./pdf25.pdf> <./pdf26.pdf>] [29 <./pdf27.pdf>]
+ <./pdf25.pdf> <./cli.pdf>]
 No file u2.bbl.
-[30
+[21
 
 ] 
 AED: lastpage setting LastPage
 (u2.aux) ) 
 Here is how much of TeX's memory you used:
- 5041 strings out of 493312
- 70659 string characters out of 3138901
+ 4996 strings out of 493312
+ 69822 string characters out of 3138901
  248663 words of memory out of 3000000
- 8458 multiletter control sequences out of 15000+200000
+ 8422 multiletter control sequences out of 15000+200000
  13930 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,58p,585b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,58p,542b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
 dpi600\ecti1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbi1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\l
@@ -890,9 +831,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb>
-Output written on u2.pdf (30 pages, 627254 bytes).
+Output written on u2.pdf (21 pages, 548723 bytes).
 PDF statistics:
- 923 PDF objects out of 1000 (max. 8388607)
+ 751 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

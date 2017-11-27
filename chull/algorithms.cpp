@@ -149,7 +149,7 @@ std::vector<QPoint> algorithms::qhull(std::vector<QPoint> &points)
     ch.push_back(q1);
     qh(lh, ch, 0, 1);
 
-    return ch;
+   return ch;
 }
 
 void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s, int e)
@@ -322,6 +322,7 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 
 
     return ch;
+
 }
 
 
@@ -368,6 +369,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
     return std::vector<QPoint>();
 #endif
 }
+
 
 
 
