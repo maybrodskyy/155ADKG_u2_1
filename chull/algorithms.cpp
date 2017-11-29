@@ -104,7 +104,19 @@ std::vector<QPoint> algorithms::jarvisCH(std::vector<QPoint> &points)
     }
     while(pj != q);
 
-    return ch;
+    //strict convetional chull
+
+     ch.push_back(ch[0]);
+     ch.push_back(ch[1]);
+
+     for(uint i = 0 ; i < ch.size() - 1 ; i++ )
+     {   // try to find points on the same line
+         if( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 ){
+             ch.erase(ch.begin()+(i+1));
+             i=i-1;   // if point is finded go back to the previous point
+     }
+     }
+     return ch;
 }
 
 std::vector<QPoint> algorithms::qhull(std::vector<QPoint> &points)
@@ -148,6 +160,20 @@ std::vector<QPoint> algorithms::qhull(std::vector<QPoint> &points)
     //Process lower hull
     ch.push_back(q1);
     qh(lh, ch, 0, 1);
+
+
+    //strict convetional chull
+
+     ch.push_back(ch[0]);
+     ch.push_back(ch[1]);
+
+     for(uint i = 0 ; i < ch.size() - 1 ; i++ )
+     {   // try to find points on the same line
+         if( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 ){
+             ch.erase(ch.begin()+(i+1));
+             i=i-1;   // if point is finded go back to the previous point
+     }
+     }
 
    return ch;
 }
@@ -321,6 +347,20 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 
 
 
+    //strict convetional chull
+
+     ch.push_back(ch[0]);
+     ch.push_back(ch[1]);
+
+     for(uint i = 0 ; i < ch.size() - 1 ; i++ )
+     {   // try to find points on the same line
+         if( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 ){
+             ch.erase(ch.begin()+(i+1));
+             i=i-1;   // if point is finded go back to the previous point
+     }
+     }
+
+
     return ch;
 
 }
@@ -328,54 +368,38 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 
 std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 {
-    #ifdef GRAHAM
-    std::vector<QPoint> ch;
-    int amin=2*3.14159265;
-
-    // Sort points by Y
-    std::sort(points.begin(),points.end(),sortByYAsc());
-
-    //Find pivot
-    QPoint q = points[0];
-    QPoint p_1 = points[1];
+    // #ifdef GRAHAM
 
 
-    //Ad pivot and other 2 points
-    ch.push_back(q);
-    ch.push_back(p_1);
 
-       /* for(int i=1;i<points.size()-1;i++)
-        {
-            for(int j=2;j<points.size()-2;i++)
-            {
 
-            for(int j=2;j<points.size()-2;i++)
-            {
-            double angle=getAngle(q,points[i],q,points[j]);
 
-            //Common point
-            if(angle < amin)
-            {
-                amin = angle;
-                ch.push_back(points[i]);
-            }
-            }
-            if(amin<amin2){
-                amin=amin
-            }
-*/
-#endif
+/*#endif
 #ifndef GRAHAM
     return std::vector<QPoint>();
-#endif
+#endif  */
 }
 
+/*
 
 
+std::vector<QPoint> algorithms::strictCH(std::vector<QPoint> ch)
+{
+    const double EPS = 1.0e-10;
 
+    // add first two points at the end (becouse of cicle)
+    ch.push_back(ch[0]);
+    ch.push_back(ch[1]);
 
+    // new strict convex hull
+    std::vector<QPoint> CH;
 
+    for(uint i = 0 ; i < ch.size() - 1 ; i++ )
+    {
+        while( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 )
+            CH.push_back(ch[i+1]);
+    }
 
-
-
+    return CH;
+}*/
 

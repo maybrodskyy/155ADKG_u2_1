@@ -123,9 +123,6 @@ void Widget::on_Jarvis_clicked()
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
     }
 
-
-    //QElapsedTimer time_bitch;
-    //time_bitch.start();
 }
 
 void Widget::on_QuickHull_clicked()
@@ -178,7 +175,7 @@ void Widget::on_Incremental_clicked()
 
 void Widget::on_Graham_clicked()
 {
-    #ifdef GRAHAM
+    //#ifdef GRAHAM
     if(ui->graphCheckBox->checkState()){
         ui->walkthroughLabel->setText("Click the Generate Graph button and save the results!");
         ui->hullLabel->setText("Graham");
@@ -195,7 +192,7 @@ void Widget::on_Graham_clicked()
         ui->Canvas->repaint();
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
     }
-    #endif
+   // #endif
 
 }
 

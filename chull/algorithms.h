@@ -5,6 +5,9 @@
 //#define GRAHAM
 
 #include <QPoint>
+#include <QPolygon>
+#include <stack>
+
 class algorithms
 {
 public:
@@ -24,6 +27,8 @@ public:
     static std::vector<QPoint> incr(std::vector<QPoint> &points);
     static void qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s, int e);
     static std::vector<QPoint> grscan(std::vector<QPoint> &points);
+    static std::vector<QPoint> strictCH(std::vector<QPoint> ch);
+       static QPolygon grahamScan(std::vector<QPoint> &points);
 };
 
 #endif // ALGORITHMS_H
