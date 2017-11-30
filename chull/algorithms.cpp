@@ -8,7 +8,6 @@ algorithms::algorithms()
 
 }
 
-
 int algorithms::getPosition(QPoint &q,QPoint &a, QPoint &b)
 {
     double eps = 1.0e-6;
@@ -187,7 +186,7 @@ void algorithms::qh(std::vector<QPoint> &points, std::vector<QPoint> &ch, int s,
     for(unsigned  int i = 0 ; i < points.size() ; i++)
     {
         int result = getPosition(points[i],points[s],points[e]);
-        if (result ==1) { //0
+        if (result ==1) {
             double dist = getPointLineDist(points[i],points[s],points[e]);
             if (dist > dmax){
                 imax = i;
@@ -347,12 +346,12 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 
 
 
-    //strict convetional chull
+    //strict convex chull
 
      ch.push_back(ch[0]);
      ch.push_back(ch[1]);
 
-     for(uint i = 0 ; i < ch.size() - 1 ; i++ )
+     for(unsigned int i = 0 ; i < ch.size() - 1 ; i++ )
      {   // try to find points on the same line
          if( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 ){
              ch.erase(ch.begin()+(i+1));
@@ -368,38 +367,125 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 
 std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 {
-    // #ifdef GRAHAM
+    // elimination of all duplcite points
 
+     double eps = 1e-12;
+     int j=0;
+     bool k= true;
+     QPoint p_0(0, 0);
 
+     if(k==true){
 
+         std::sort(points.begin(), points.end(), sortByXAsc());
+         j=0;
+         k=false;
+         for(unsigned int i = 0; i < points.size()-1; i++)
+         {
+             if((abs(points[i].x() - points[i+1].x()) < eps) && (abs(points[i].y() - points[i+1].y()) < eps))
+             {
+                 points[i] = p_0;
+                 k = true;
+                 j++;
+             }
+     }
+         std::sort(points.begin(), points.end(), sortByXAsc());
+         points.erase(points.begin(),points.begin()+j);
+     }
 
+    std::vector<QPoint> ch;
+    std::vector<QPoint> sec_ch;
 
-/*#endif
-#ifndef GRAHAM
-    return std::vector<QPoint>();
-#endif  */
-}
+    // sort all points by Y
+    std::sort(points.begin(), points.end(), sortByYAsc());
+    // create pivot
+    pvt=points[0];
+    // put pivot to the second slot
+    sec_ch.push_back(points[0]);
+    //orientation of pivot
+    pvt_orient.setX(-100);
+    pvt_orient.setY(pvt.y());
+    ch.push_back(pvt);
 
-/*
+    std::sort(points.begin(), points.end(), compareAngle);
+    // delete points on the same line
+    for(unsigned int i=0; i<points.size();i++){
+        ch.push_back(points[i]);
+        while (getPosition(points[i],points[0],points[i+1])==-1)
+        {
+            i=i+1; //delete this point
+        }
+    }
+    // put pivot and the the second minimum point to the second slot
+    sec_ch.push_back(pvt);
+    sec_ch.push_back(ch[1]);
 
+    //Find convextible points
 
-std::vector<QPoint> algorithms::strictCH(std::vector<QPoint> ch)
-{
-    const double EPS = 1.0e-10;
-
-    // add first two points at the end (becouse of cicle)
-    ch.push_back(ch[0]);
-    ch.push_back(ch[1]);
-
-    // new strict convex hull
-    std::vector<QPoint> CH;
-
-    for(uint i = 0 ; i < ch.size() - 1 ; i++ )
+    for(unsigned int i = 2; i < ch.size(); i++)
     {
-        while( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 )
-            CH.push_back(ch[i+1]);
+       QPoint t=sec_ch[sec_ch.size()-1];
+       sec_ch.pop_back();
+        QPoint q = sec_ch[sec_ch.size()-1];
+        sec_ch.push_back(t);
+
+        while (getPosition(ch[i], q, sec_ch[sec_ch.size()-1])!=1) {
+            sec_ch.pop_back();
+            t=sec_ch[sec_ch.size()-1];
+            sec_ch.pop_back();
+            q = sec_ch[sec_ch.size()-1];
+            sec_ch.push_back(t);
+        }
+        sec_ch.push_back(ch[i]);
+    }
+    // put final points from the second slot to the first one
+    ch.clear();
+    while(!sec_ch.empty())
+    {
+        ch.push_back(sec_ch[sec_ch.size()-1]); //-1
+         sec_ch.pop_back();
     }
 
-    return CH;
-}*/
+    //strict convex chull
+
+     ch.push_back(ch[0]);
+     ch.push_back(ch[1]);
+
+     for(unsigned int i = 0 ; i < ch.size() - 1 ; i++ )
+     {   // try to find points on the same line
+         if( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 ){
+             ch.erase(ch.begin()+(i+1));
+             i=i-1;   // if point is finded go back to the previous point
+     }
+     }
+    return ch;
+    }
+
+    QPoint algorithms::pvt;
+    QPoint algorithms::pvt_orient;
+
+    bool algorithms::compareAngle(QPoint &a, QPoint &b)
+    {
+        //function compare angles between each other
+    const double eps = 1.0e-9;
+
+    double anga = getAngle(pvt, pvt_orient, pvt, a);
+    double angb = getAngle(pvt, pvt_orient, pvt, b);
+
+    if(std::abs(anga - angb)>=eps){
+    return anga>angb;
+    }
+    else{
+        bool c = compareDistance(a,b);
+        return c;
+    }
+    }
+
+    bool algorithms::compareDistance(QPoint &a, QPoint &b)
+    {
+        //function compare distances between each other
+    double d1 = distance(pvt, a);
+    double d2 = distance(pvt, b);
+
+    return d1>d2;
+    }
 

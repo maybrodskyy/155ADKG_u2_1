@@ -36,9 +36,9 @@ void graphMode::Process(int &p, int &a, QSize &window_size){ //point-generator a
         case 1 : algorithm = algorithms::jarvisCH;
         case 2 : algorithm = algorithms::qhull;
         case 3 : algorithm = algorithms::incr;
-#ifdef GRAHAM
+//#ifdef GRAHAM
         case 4 : algorithm = algorithms::grscan;
-#endif
+//#endif
     }
     //qDebug()<<"a"<<a;
 

@@ -9,15 +9,17 @@
 #include "widget.h"
 #include "ui_widget.h"
 
+# define Graham
+
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
     std::srand(std::time(0));
-#ifndef GRAHAM
+/*#ifndef GRAHAM
     ui->Graham->setDisabled(true);
-#endif
+#endif*/
 }
 
 Widget::~Widget()
@@ -50,7 +52,6 @@ void Widget::on_Random_clicked()
     }
     ui->walkthroughLabel->setText("Now select the convex hull algorithm.");
 
-// zkousel jsem generaci -nezkousej ve widgetu plz :D
 }
 
 
@@ -168,8 +169,6 @@ void Widget::on_Incremental_clicked()
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
     }
 
-    //QElapsedTimer time_bitch;
-    //time_bitch.start();
 }
 
 
