@@ -209,6 +209,15 @@ Horní část obsahuje body nad spojnicí bodů a dolní část je pod spojnicí
 
 Inkrementální algoritmus je velmi rychlý algoritmus pro výpočet konvexní obalky. Princip se základa na postupným testováním bodů, respektive jejich předaváním do konvexní obalky, jejiž tvar je modefikovan.\\
 \bigskip
+
+\subsection{Graham Scan} 
+Grahamuv Scan je algoritmus určený pro výpočet konvexní obálky ve dvou rozměrném prostoru. \\
+Algoritmus nejprve vyhledává pivot $p$ , jehož souřadnice  $y$ je minimální. Z něj se proloži polární orientace na ostatní body. Body jsou následně seřazeny dle velikostí těchto orientaci, respektivě úhlů. Pivot a všechny body co leží vlevo, jsou postupně ukládany do konvexní obálky.  
+\bigskip
+\subsection{Striktně konvexní obálka }
+Účelem algoritmu je detikovat body na přímkach, respektivě, aby přimka jako taková, byla tvořena jen 2 body, tedy počátkem a koncem. \\
+V algoritmu jsou postupně procházeny všechny trojíce bodů. Pokud se prokazalo, že 3 body leží na společní přímce, tak prostřední bod je detikovan.
+\bigskip
 \clearpage
 \newpage
 \section{Vstupní data}
@@ -260,7 +269,7 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{ranj.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 \clearpage
 \newpage
@@ -274,7 +283,7 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{rang.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 \clearpage
 \newpage
@@ -288,9 +297,18 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{rani.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 .\\
+\clearpage
+\newpage
+\textit{\textbf {Graham Scan}}
+\\
+\begin{figure}[htbp]
+\centering
+        \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{rgs.pdf}
+        \caption{průměr z 10 generování}
+\end{figure}
 \clearpage
 \newpage
 \subsection{GRID}
@@ -304,7 +322,7 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{grj.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 \\
 \clearpage
@@ -319,7 +337,7 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{grq.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 \clearpage
 \newpage
@@ -333,10 +351,19 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{gri.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 .\\
 \bigskip
+\clearpage
+\newpage
+\textit{\textbf {Graham Scan}}
+\\
+\begin{figure}[htbp]
+\centering
+        \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{ggs.pdf}
+        \caption{průměr z 10 generování}
+\end{figure}
 \clearpage
 \newpage
 \subsection{CLUSTER}
@@ -350,7 +377,7 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{clj.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 \\
 \clearpage
@@ -365,7 +392,7 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{clq.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 \clearpage
 \newpage
@@ -379,26 +406,39 @@ Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v pod
 \begin{figure}[htbp]
 \centering
         \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{cli.pdf}
-        \caption{generování 10x}
+        \caption{průměr z 10 generování}
 \end{figure}
 .\\
+\clearpage
+\newpage
+\textit{\textbf {Graham Scan}}
+\\
+\begin{figure}[htbp]
+\centering
+        \includegraphics[clip, trim=0cm 0cm 0cm 0cm, width=1\textwidth]{cgs.pdf}
+        \caption{průměr z 10 generování}
+\end{figure}
 \bigskip
 \clearpage
 \section{Závěr}
-\indent Autoři splnili většinu bodů zadání a vznikl program, který generuje soubor bodů, jejich rozmíštění a počita rychlost výpočtu algortimu.
+\indent Autoři splnili většinu bodů zadání a vznikl prográm, který generuje soubor bodů, jejich rozmíštění a počita rychlost výpočtu algortimu.
 V předchozí kapitole jsou zobrazeny grafy, které znázorňují pruběhy výpočtu algoritmů. Test byl proveden několikrát. Jak je vidět z grafů, nejvíce nestabiliní je Jarvis Scan. Dochází k velkému kolisání v počátečných aj dokonce u středních hodnot. O něco lépe je na tom Quick Hull, a však aj u něho dochází ke znáčným výchylům. Obecně dalo by se řici, že Incremental construction je nejvíc stabilní algoritmus ze všech výše uvedených.
 \bigskip
 Každopádně k výchylům na intervalu hodnot kolem několika tisíc dochází pravidelně a u všech algoritmů. S rostoucím počtem $n$ klesa zároveň výchylka mezi jednotlivými testy. Zároveň s rostoucím počtem $n$ klesa rozdíl mezi jednotilivými metodami. 
 \bigskip
 Z výsledku lze usoudit, že pro generování menšího objemu dat je lepší využit Incremental construction, případně Quick Hall, naopak pro velký objem dat co převýšuje velikosti desítek tisíc je možné využivát jaký koliv algoritmus.
-Bohužel z časových důvodů nebylo možné splnit bonusové úlohy, proto třeba Graham Scan zůstal jen rozdělaný.
+ Graham Scan se prokazuje jakož to nevhodný a zpomalený algoritmus. 
+ Z bonusových úloh bylo naprogramováno:
+ \\Graham Scan
+\\Konstrukce striktně konvexních obálek pro všechny algoritmy
+\\Ošetření singulárního připadu u Jarvis Scan
 	\subsection{Náměty na vylepšení} %+možné či neřešené problémy
 	\indent Aplikace, ač funkční a splňující daný účel, má spoustu nedostatků, které by bylo dobré v budoucnu odstranit. Autoři zde uvádí pár těch nejzjevnějších. \\
 	\bigskip
-	V algoritmu Incremental pro malé hodnoty (cca 10 bodů) dochází k tomu, že občas některý bod není zahrnut do vzníku nové obálky. Bohužel chybu nešlo přimo detekovát, protože má nahodilý charakter.\\
+	V algoritmu Graham Scan pro Grid siť dochází k tomu, že občas jeden krajný dolný bod není zahrnut do vzníku nové obálky. Bohužel chybu nešlo přimo detekovát.\\
 	\bigskip \indent \textit{Souřadnicové osy: }
 	\\
-	 Vykreslovací okno má v Qt, stejně jako ve většině podobných nástrojů, počátek souřadnic v levém horním rohu, kladnou osu x vpravo a kladnou osu y směrem dolů. Tento model se však neshoduje ani s geodetickými souřadnicemi používanými na našem území (kladná y doleva, kladná x dolů), ani s klasickým označením os (kladná x doprava, kladná y nahoru). Proto se body v současné verzi zobrazují jinak, než by možná uživatel očekával. Vhodným řešením by byla opět transformace. \\
+	 Vykreslovací okno má v Qt, stejně jako ve většině podobných nástrojů, počátek souřadnic v levém horním rohu, kladnou osu x vpravo a kladnou osu y směrem dolů. Tento model se však neshoduje ani s geodetickými souřadnicemi používanými na našem území (kladná y doleva, kladná x dolů), ani s klasickým označením os (kladná x doprava, kladná y nahoru). Proto se body v současné verzi zobrazují jinak, než by možná uživatel očekával. Vhodným řešením by byla transformace. \\
 	\bigskip 
 \bibliography{u1}
 \bibliographystyle{plain}

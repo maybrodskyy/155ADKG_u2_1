@@ -4,12 +4,14 @@
 \contentsline {subsection}{\numberline {3.1}Jarvis Scan}{5}
 \contentsline {subsection}{\numberline {3.2}Quick Hull}{6}
 \contentsline {subsection}{\numberline {3.3}Incremental Construcion}{6}
+\contentsline {subsection}{\numberline {3.4}Graham Scan}{6}
+\contentsline {subsection}{\numberline {3.5}Striktn\IeC {\v e} konvexn\IeC {\'\i } ob\IeC {\'a}lka }{6}
 \contentsline {section}{\numberline {4}Vstupn\IeC {\'\i } data}{7}
 \contentsline {section}{\numberline {5}V\IeC {\'y}stupn\IeC {\'\i } data}{8}
 \contentsline {section}{\numberline {6}Uk\IeC {\'a}zky aplikace}{9}
 \contentsline {subsection}{\numberline {6.1}RANDOM}{12}
-\contentsline {subsection}{\numberline {6.2}GRID}{15}
-\contentsline {subsection}{\numberline {6.3}CLUSTER}{18}
-\contentsline {section}{\numberline {7}Z\IeC {\'a}v\IeC {\v e}r}{21}
-\contentsline {subsection}{\numberline {7.1}N\IeC {\'a}m\IeC {\v e}ty na vylep\IeC {\v s}en\IeC {\'\i }}{21}
-\contentsline {section}{References}{21}
+\contentsline {subsection}{\numberline {6.2}GRID}{16}
+\contentsline {subsection}{\numberline {6.3}CLUSTER}{20}
+\contentsline {section}{\numberline {7}Z\IeC {\'a}v\IeC {\v e}r}{24}
+\contentsline {subsection}{\numberline {7.1}N\IeC {\'a}m\IeC {\v e}ty na vylep\IeC {\v s}en\IeC {\'\i }}{24}
+\contentsline {section}{References}{24}
