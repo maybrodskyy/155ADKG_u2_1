@@ -423,41 +423,29 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 
     for(unsigned int i = 2; i < ch.size(); i++)
     {
-       QPoint t=sec_ch[sec_ch.size()-1];
+       QPoint t1=sec_ch[sec_ch.size()-1];
        sec_ch.pop_back();
-        QPoint q = sec_ch[sec_ch.size()-1];
-        sec_ch.push_back(t);
+        QPoint t2 = sec_ch[sec_ch.size()-1];
+        sec_ch.push_back(t1);
 
-        while (getPosition(ch[i], q, sec_ch[sec_ch.size()-1])!=1) {
+        while(getPosition(ch[i], t2, sec_ch[sec_ch.size()-1])!=1){
             sec_ch.pop_back();
-            t=sec_ch[sec_ch.size()-1];
+            t1=sec_ch[sec_ch.size()-1];
             sec_ch.pop_back();
-            q = sec_ch[sec_ch.size()-1];
-            sec_ch.push_back(t);
+            t2 = sec_ch[sec_ch.size()-1];
+            sec_ch.push_back(t1);
         }
         sec_ch.push_back(ch[i]);
     }
-    // put final points from the second slot to the first one
-    ch.clear();
-    while(!sec_ch.empty())
-    {
-        ch.push_back(sec_ch[sec_ch.size()-1]); //-1
-         sec_ch.pop_back();
-    }
 
-    //strict convex chull
-
-     ch.push_back(ch[0]);
-     ch.push_back(ch[1]);
-
-     for(unsigned int i = 0 ; i < ch.size() - 1 ; i++ )
+     for(unsigned int i = 0 ; i < sec_ch.size() - 1 ; i++ )
      {   // try to find points on the same line
-         if( getPointLineDist( ch[i] , ch[i+1] , ch[i+2] ) ==-1 ){
-             ch.erase(ch.begin()+(i+1));
+         if( getPointLineDist( sec_ch[i] , sec_ch[i+1] , sec_ch[i+2] ) ==-1 ){
+             sec_ch.erase(sec_ch.begin()+(i+1));
              i=i-1;   // if point is finded go back to the previous point
      }
      }
-    return ch;
+    return  sec_ch;
     }
 
     QPoint algorithms::pvt;
