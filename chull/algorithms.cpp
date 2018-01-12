@@ -452,7 +452,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 
     bool algorithms::compareAngle(QPoint &a, QPoint &b)
     {
-        //function compare angles between each other
+        //function compare angles between 2 points
     const double eps = 1.0e-13;
 
     double anga = getAngle(pvt, pvt_orient, pvt, a);
@@ -469,7 +469,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 
     bool algorithms::compareDistance(QPoint &a, QPoint &b)
     {
-        //function compare distances between each other
+        //function compare distances between 2 points
     double d1 = distance(pvt, a);
     double d2 = distance(pvt, b);
 

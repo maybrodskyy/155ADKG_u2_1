@@ -1,11 +1,8 @@
 #include <QMessageBox>
 #include <QFileDialog>
-
 #include <ctime>
-
 #include "ptgenerator.h"
 #include "algorithms.h"
-#include "graphmode.h"
 #include "widget.h"
 #include "ui_widget.h"
 
@@ -30,11 +27,11 @@ Widget::~Widget()
 
 void Widget::on_Random_clicked()
 {
-    if(ui->graphCheckBox->checkState()){
+  /*  if(ui->graphCheckBox->checkState()){
         ui->pointLabel->setText("Random");
         point_type = 1;
     }
-    else{
+    else{*/
         int input_numberd=ui->num_rand->text().toInt();
         if(input_numberd<=0){
             error_flag = true;
@@ -49,7 +46,7 @@ void Widget::on_Random_clicked()
         std::vector<QPoint> pts = ptgenerator::generateRandom(input_numberd,s);
         ui->Canvas->setPoints(pts);
         ui->Canvas->repaint();
-    }
+    //}
     ui->walkthroughLabel->setText("Now select the convex hull algorithm.");
 
 }
@@ -57,11 +54,11 @@ void Widget::on_Random_clicked()
 
 void Widget::on_Grid_clicked()
 {
-    if(ui->graphCheckBox->checkState()){
+   /* if(ui->graphCheckBox->checkState()){
         ui->pointLabel->setText("Grid");
         point_type = 2;
     }
-    else{
+    else{*/
         int input_numberd=ui->num_rand->text().toInt();
         if(input_numberd<=0){
             error_flag = true;
@@ -69,24 +66,24 @@ void Widget::on_Grid_clicked()
             msgSettings(msg);
             msg->show();
             return;
-        }
+       }
         error_flag = false;
         ui->Canvas->clearHull();
         QSize s = ui->Canvas->size();
         std::vector<QPoint> pts = ptgenerator::generateGrid(input_numberd,s);
         ui->Canvas->setPoints(pts);
         ui->Canvas->repaint();
-    }
+  //  }
     ui->walkthroughLabel->setText("Now select the convex hull algorithm.");
 }
 
 void Widget::on_Cluster_clicked()
 {
-    if(ui->graphCheckBox->checkState()){
+ /*   if(ui->graphCheckBox->checkState()){
         ui->pointLabel->setText("Cluster");
         point_type = 3;
     }
-    else{
+    else{*/
         int input_numberd=ui->num_rand->text().toInt();
         if(input_numberd<=0){
             error_flag = true;
@@ -94,25 +91,25 @@ void Widget::on_Cluster_clicked()
             msgSettings(msg);
             msg->show();
             return;
-        }
+       }
         error_flag=0;
         ui->Canvas->clearHull();
         QSize s = ui->Canvas->size();
         std::vector<QPoint> pts = ptgenerator::generateCluster(input_numberd,s);
         ui->Canvas->setPoints(pts);
         ui->Canvas->repaint();
-    }
+  //  }
     ui->walkthroughLabel->setText("Now select the convex hull algorithm.");
 }
 
 void Widget::on_Jarvis_clicked()
 {
-    if(ui->graphCheckBox->checkState()){
+  /*  if(ui->graphCheckBox->checkState()){
         ui->walkthroughLabel->setText("Click the Generate Graph button and save the results!");
         ui->hullLabel->setText("Jarvis");
         algorithm_type = 1;
     }
-    else{
+    else{*/
         if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
@@ -122,18 +119,18 @@ void Widget::on_Jarvis_clicked()
         ui->Canvas->setHull(hull);
         ui->Canvas->repaint();
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
-    }
+  //  }
 
 }
 
 void Widget::on_QuickHull_clicked()
 {
-    if(ui->graphCheckBox->checkState()){
+    /*if(ui->graphCheckBox->checkState()){
         ui->walkthroughLabel->setText("Click the Generate Graph button and save the results!");
         ui->hullLabel->setText("QuickHull");
         algorithm_type = 2;
     }
-    else{
+    else{*/
         if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
@@ -143,7 +140,7 @@ void Widget::on_QuickHull_clicked()
         ui->Canvas->setHull(hull);
         ui->Canvas->repaint();
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
-    }
+  //  }
 
     //QElapsedTimer time_bitch;
     //time_bitch.start();
@@ -152,12 +149,12 @@ void Widget::on_QuickHull_clicked()
 
 void Widget::on_Incremental_clicked()
 {
-    if(ui->graphCheckBox->checkState()){
+  /*  if(ui->graphCheckBox->checkState()){
         ui->walkthroughLabel->setText("Click the Generate Graph button and save the results!");
         ui->hullLabel->setText("Incremental");
         algorithm_type = 3;
     }
-    else{
+    else{*/
         if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
@@ -167,7 +164,7 @@ void Widget::on_Incremental_clicked()
         ui->Canvas->setHull(hull);
         ui->Canvas->repaint();
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
-    }
+ //   }
 
 }
 
@@ -175,12 +172,12 @@ void Widget::on_Incremental_clicked()
 void Widget::on_Graham_clicked()
 {
     //#ifdef GRAHAM
-    if(ui->graphCheckBox->checkState()){
+  /*  if(ui->graphCheckBox->checkState()){
         ui->walkthroughLabel->setText("Click the Generate Graph button and save the results!");
         ui->hullLabel->setText("Graham");
         algorithm_type = 4;
     }
-    else{
+    else{*/
         if(error_flag) return;
         ui->Canvas->clearHull();
         std::vector<QPoint> pts = ui->Canvas->getPoints();
@@ -190,12 +187,12 @@ void Widget::on_Graham_clicked()
         ui->Canvas->setHull(hull);
         ui->Canvas->repaint();
         ui->time_output->setText(QString::number(double(t_end-t_start)/CLOCKS_PER_SEC));
-    }
+   // }
    // #endif
 
 }
 
-
+/*
 void Widget::on_graphCheckBox_clicked(bool ticked)
 {
         ui->num_rand->setDisabled(ticked);
@@ -204,7 +201,7 @@ void Widget::on_graphCheckBox_clicked(bool ticked)
         ui->hullLabel->setEnabled(ticked);
         ui->pointLabel->setEnabled(ticked);
 }
-
+*/
 void Widget::on_clear_clicked()
 {
     ui->Canvas->clearAll();
@@ -212,9 +209,9 @@ void Widget::on_clear_clicked()
     ui->walkthroughLabel->clear();
     ui->hullLabel->clear();
     ui->pointLabel->clear();
-    ui->graphCheckBox->setEnabled(false);
+  //  ui->graphCheckBox->setEnabled(false);
 }
-
+/*
 void Widget::on_generateGraph_clicked()
 {
 
@@ -238,4 +235,4 @@ void Widget::on_generateGraph_clicked()
     QPainter painter(&pdfWriter);
     view->render(&painter);
     painter.end();
-}
+}*/

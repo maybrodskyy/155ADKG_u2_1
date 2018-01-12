@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1030</width>
-    <height>557</height>
+    <height>595</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -44,7 +44,7 @@
        <height>0</height>
       </size>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
       <item>
        <widget class="QLabel" name="label">
         <property name="font">
@@ -61,13 +61,6 @@
       </item>
       <item>
        <widget class="QLineEdit" name="num_rand"/>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="graphCheckBox">
-        <property name="text">
-         <string>Graph mode</string>
-        </property>
-       </widget>
       </item>
       <item>
        <widget class="QLabel" name="walkthroughLabel">
@@ -168,16 +161,6 @@
        </spacer>
       </item>
       <item>
-       <widget class="QLabel" name="textLabel">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string>You have selected:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QLabel" name="pointLabel">
         <property name="enabled">
          <bool>false</bool>
@@ -194,16 +177,6 @@
         </property>
         <property name="text">
          <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="generateGraph">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string>Generate graph</string>
         </property>
        </widget>
       </item>

@@ -34,7 +34,7 @@ private slots:
 
     void on_Graham_clicked();
 
-    void on_graphCheckBox_clicked(bool ticked);
+  //  void on_graphCheckBox_clicked(bool ticked);
 
     void on_generateGraph_clicked();
 
