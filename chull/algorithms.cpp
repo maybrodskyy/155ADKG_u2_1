@@ -365,14 +365,19 @@ std::vector<QPoint> algorithms::incr(std::vector<QPoint> &points)
 }
 
 
+QPoint algorithms::pvt;
+QPoint algorithms::pvt_orient;
+
 std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
 {
-    // elimination of all duplcite points
-
      double eps = 1e-12;
      int j=0;
      bool k= true;
      QPoint p_0(0, 0);
+     std::vector<QPoint> ch;
+     std::vector<QPoint> sec_ch;
+
+     // elimination of all duplcite points
 
      if(k==true){
 
@@ -392,36 +397,34 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
          points.erase(points.begin(),points.begin()+j);
      }
 
-    std::vector<QPoint> ch;
-    std::vector<QPoint> sec_ch;
-
     // sort all points by Y
     std::sort(points.begin(), points.end(), sortByYAsc());
+    // put pivot to the second slot
+     ch.push_back(points[0]);
+    sec_ch.push_back(points[0]);
     // create pivot
     pvt=points[0];
-    // put pivot to the second slot
-    sec_ch.push_back(points[0]);
     //orientation of pivot
-    pvt_orient.setX(-100);
+    pvt_orient.setX(-10000);
     pvt_orient.setY(pvt.y());
-    ch.push_back(pvt);
 
     std::sort(points.begin(), points.end(), compareAngle);
+
     // delete points on the same line
-    for(unsigned int i=0; i<points.size();i++){
-        ch.push_back(points[i]);
+    for(unsigned int i=0; i<=points.size()-1;i++){
+
         while (getPosition(points[i],points[0],points[i+1])==-1)
         {
-            i=i+1; //delete this point
+            i++;
         }
+             ch.push_back(points[i]);
     }
-    // put pivot and the the second minimum point to the second slot
-    sec_ch.push_back(pvt);
+    // the second minimum point to the last slot
     sec_ch.push_back(ch[1]);
 
-    //Find convextible points
+  //Find convextible points
 
-    for(unsigned int i = 2; i < ch.size(); i++)
+    for(unsigned int i = 2; i <= ch.size()-1; i++)
     {
        QPoint t1=sec_ch[sec_ch.size()-1];
        sec_ch.pop_back();
@@ -437,8 +440,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
         }
         sec_ch.push_back(ch[i]);
     }
-
-     for(unsigned int i = 0 ; i < sec_ch.size() - 1 ; i++ )
+  for(unsigned int i = 0 ; i < sec_ch.size() - 1 ; i++ )
      {   // try to find points on the same line
          if( getPointLineDist( sec_ch[i] , sec_ch[i+1] , sec_ch[i+2] ) ==-1 ){
              sec_ch.erase(sec_ch.begin()+(i+1));
@@ -448,13 +450,10 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
     return  sec_ch;
     }
 
-    QPoint algorithms::pvt;
-    QPoint algorithms::pvt_orient;
-
     bool algorithms::compareAngle(QPoint &a, QPoint &b)
     {
         //function compare angles between each other
-    const double eps = 1.0e-9;
+    const double eps = 1.0e-13;
 
     double anga = getAngle(pvt, pvt_orient, pvt, a);
     double angb = getAngle(pvt, pvt_orient, pvt, b);
@@ -474,6 +473,6 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
     double d1 = distance(pvt, a);
     double d2 = distance(pvt, b);
 
-    return d1>d2;
+    return d1<d2;
     }
 
