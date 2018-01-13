@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.11)  1 DEC 2017 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.13)  13 JAN 2018 23:48
 entering extended mode
 **./u2.tex
 (u2.tex
@@ -652,224 +652,239 @@ Package pdftex.def Info: Requested size: 469.75499pt x 275.4359pt on input line
  [9
 
  <./obrazek1.png>] [10 <./obrazek2.png> <./obrazek3.png>] [11 <./obrazek4.png>]
-<pdf1.pdf, id=119, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf1.pdf Graphic file (type pdf)
-<use pdf1.pdf>
-Package pdftex.def Info: pdf1.pdf  used on input line 265. on input line 265.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 265.
-<ranj.pdf, id=121, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: ranj.pdf Graphic file (type pdf)
-<use ranj.pdf>
-Package pdftex.def Info: ranj.pdf  used on input line 271. on input line 271.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 271.
+<jr.pdf, id=119, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: jr.pdf Graphic file (type pdf)
+<use jr.pdf>
+Package pdftex.def Info: jr.pdf  used on input line 265. on input line 265.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 265.
+<jr.png, id=121, 630.55576pt x 175.857pt>
+File: jr.png Graphic file (type png)
+<use jr.png>
+Package pdftex.def Info: jr.png  used on input line 270. on input line 270.
+Package pdftex.def Info: Requested size: 469.75499pt x 131.01495pt on input lin
+e 270.
  [12
 
- <./pdf1.pdf> <./ranj.pdf>]
-<pdf4.pdf, id=152, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf4.pdf Graphic file (type pdf)
-<use pdf4.pdf>
-Package pdftex.def Info: pdf4.pdf  used on input line 280. on input line 280.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 280.
-<rang.pdf, id=154, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: rang.pdf Graphic file (type pdf)
-<use rang.pdf>
-Package pdftex.def Info: rang.pdf  used on input line 285. on input line 285.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 285.
- [13
+ <./jr.pdf, page is rotated 90 degrees> <./jr.png>]
+<qr.pdf, id=142, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: qr.pdf Graphic file (type pdf)
+<use qr.pdf>
+Package pdftex.def Info: qr.pdf  used on input line 278. on input line 278.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 278.
+<qr.png, id=144, 630.55576pt x 176.45924pt>
+File: qr.png Graphic file (type png)
+<use qr.png>
+Package pdftex.def Info: qr.png  used on input line 282. on input line 282.
+Package pdftex.def Info: Requested size: 469.75499pt x 131.46362pt on input lin
+e 282.
 
- <./pdf4.pdf> <./rang.pdf>]
-<pdf7.pdf, id=186, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf7.pdf Graphic file (type pdf)
-<use pdf7.pdf>
-Package pdftex.def Info: pdf7.pdf  used on input line 294. on input line 294.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 294.
-<rani.pdf, id=188, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: rani.pdf Graphic file (type pdf)
-<use rani.pdf>
-Package pdftex.def Info: rani.pdf  used on input line 299. on input line 299.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 299.
+[13
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--303
+ <./qr.pdf, page is rotated 90 degrees> <./qr.png>]
+<ir.pdf, id=165, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: ir.pdf Graphic file (type pdf)
+<use ir.pdf>
+Package pdftex.def Info: ir.pdf  used on input line 290. on input line 290.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 290.
+<ir.png, id=167, 630.55576pt x 176.45924pt>
+File: ir.png Graphic file (type png)
+<use ir.png>
+Package pdftex.def Info: ir.png  used on input line 294. on input line 294.
+Package pdftex.def Info: Requested size: 469.75499pt x 131.46362pt on input lin
+e 294.
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--297
 
  []
 
 [14
 
- <./pdf7.pdf> <./rani.pdf>]
-<rgs.pdf, id=219, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: rgs.pdf Graphic file (type pdf)
-<use rgs.pdf>
-Package pdftex.def Info: rgs.pdf  used on input line 309. on input line 309.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 309.
+ <./ir.pdf, page is rotated 90 degrees> <./ir.png>]
+<gr.pdf, id=187, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: gr.pdf Graphic file (type pdf)
+<use gr.pdf>
+Package pdftex.def Info: gr.pdf  used on input line 303. on input line 303.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 303.
+<gr.png, id=189, 630.55576pt x 176.45924pt>
+File: gr.png Graphic file (type png)
+<use gr.png>
+Package pdftex.def Info: gr.png  used on input line 308. on input line 308.
+Package pdftex.def Info: Requested size: 469.75499pt x 131.46362pt on input lin
+e 308.
  [15
 
- <./rgs.pdf>]
-<pdf10.pdf, id=237, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf10.pdf Graphic file (type pdf)
-<use pdf10.pdf>
-Package pdftex.def Info: pdf10.pdf  used on input line 319. on input line 319.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 319.
-<grj.pdf, id=239, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: grj.pdf Graphic file (type pdf)
-<use grj.pdf>
-Package pdftex.def Info: grj.pdf  used on input line 324. on input line 324.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 324.
+ <./gr.pdf, page is rotated 90 degrees> <./gr.png>]
+<jg.pdf, id=209, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: jg.pdf Graphic file (type pdf)
+<use jg.pdf>
+Package pdftex.def Info: jg.pdf  used on input line 317. on input line 317.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 317.
+<jg.png, id=211, 627.5445pt x 176.45924pt>
+File: jg.png Graphic file (type png)
+<use jg.png>
+Package pdftex.def Info: jg.png  used on input line 321. on input line 321.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 321.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--328
+Underfull \hbox (badness 10000) in paragraph at lines 313--324
 
  []
 
 [16
 
- <./pdf10.pdf> <./grj.pdf>]
-<pdf13.pdf, id=270, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf13.pdf Graphic file (type pdf)
-<use pdf13.pdf>
-Package pdftex.def Info: pdf13.pdf  used on input line 334. on input line 334.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 334.
-<grq.pdf, id=272, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: grq.pdf Graphic file (type pdf)
-<use grq.pdf>
-Package pdftex.def Info: grq.pdf  used on input line 339. on input line 339.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 339.
+ <./jg.pdf, page is rotated 90 degrees> <./jg.png>]
+<qg.pdf, id=233, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: qg.pdf Graphic file (type pdf)
+<use qg.pdf>
+Package pdftex.def Info: qg.pdf  used on input line 330. on input line 330.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 330.
+<qg.png, id=235, 627.5445pt x 176.45924pt>
+File: qg.png Graphic file (type png)
+<use qg.png>
+Package pdftex.def Info: qg.png  used on input line 334. on input line 334.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 334.
  [17
 
- <./pdf13.pdf> <./grq.pdf>]
-<pdf16.pdf, id=303, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf16.pdf Graphic file (type pdf)
-<use pdf16.pdf>
-Package pdftex.def Info: pdf16.pdf  used on input line 348. on input line 348.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 348.
-<gri.pdf, id=305, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: gri.pdf Graphic file (type pdf)
-<use gri.pdf>
-Package pdftex.def Info: gri.pdf  used on input line 353. on input line 353.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 353.
+ <./qg.pdf, page is rotated 90 degrees> <./qg.png>]
+<ig.pdf, id=257, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: ig.pdf Graphic file (type pdf)
+<use ig.pdf>
+Package pdftex.def Info: ig.pdf  used on input line 342. on input line 342.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 342.
+<ig.png, id=259, 627.5445pt x 176.45924pt>
+File: ig.png Graphic file (type png)
+<use ig.png>
+Package pdftex.def Info: ig.png  used on input line 346. on input line 346.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 346.
  [18
 
- <./pdf16.pdf> <./gri.pdf>]
-<ggs.pdf, id=336, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: ggs.pdf Graphic file (type pdf)
-<use ggs.pdf>
-Package pdftex.def Info: ggs.pdf  used on input line 364. on input line 364.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 364.
+ <./ig.pdf, page is rotated 90 degrees> <./ig.png>]
+<gg.pdf, id=281, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: gg.pdf Graphic file (type pdf)
+<use gg.pdf>
+Package pdftex.def Info: gg.pdf  used on input line 356. on input line 356.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 356.
+<gg.png, id=283, 627.5445pt x 176.45924pt>
+File: gg.png Graphic file (type png)
+<use gg.png>
+Package pdftex.def Info: gg.png  used on input line 361. on input line 361.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 361.
  [19
 
- <./ggs.pdf>]
-<pdf19.pdf, id=355, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf19.pdf Graphic file (type pdf)
-<use pdf19.pdf>
-Package pdftex.def Info: pdf19.pdf  used on input line 374. on input line 374.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 374.
-<clj.pdf, id=357, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: clj.pdf Graphic file (type pdf)
-<use clj.pdf>
-Package pdftex.def Info: clj.pdf  used on input line 379. on input line 379.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 379.
+ <./gg.pdf, page is rotated 90 degrees> <./gg.png>]
+<jc.pdf, id=304, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: jc.pdf Graphic file (type pdf)
+<use jc.pdf>
+Package pdftex.def Info: jc.pdf  used on input line 370. on input line 370.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 370.
+<jc.png, id=306, 627.5445pt x 176.45924pt>
+File: jc.png Graphic file (type png)
+<use jc.png>
+Package pdftex.def Info: jc.png  used on input line 374. on input line 374.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 374.
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--383
+Underfull \hbox (badness 10000) in paragraph at lines 366--377
 
  []
 
 [20
 
- <./pdf19.pdf> <./clj.pdf>]
-<pdf22.pdf, id=388, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf22.pdf Graphic file (type pdf)
-<use pdf22.pdf>
-Package pdftex.def Info: pdf22.pdf  used on input line 389. on input line 389.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 389.
-<clq.pdf, id=390, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: clq.pdf Graphic file (type pdf)
-<use clq.pdf>
-Package pdftex.def Info: clq.pdf  used on input line 394. on input line 394.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 394.
+ <./jc.pdf, page is rotated 90 degrees> <./jc.png>]
+<qc.pdf, id=328, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: qc.pdf Graphic file (type pdf)
+<use qc.pdf>
+Package pdftex.def Info: qc.pdf  used on input line 383. on input line 383.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 383.
+<qc.png, id=330, 627.5445pt x 176.45924pt>
+File: qc.png Graphic file (type png)
+<use qc.png>
+Package pdftex.def Info: qc.png  used on input line 387. on input line 387.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 387.
  [21
 
- <./pdf22.pdf> <./clq.pdf>]
-<pdf25.pdf, id=421, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: pdf25.pdf Graphic file (type pdf)
-<use pdf25.pdf>
-Package pdftex.def Info: pdf25.pdf  used on input line 403. on input line 403.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 403.
-<cli.pdf, id=423, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: cli.pdf Graphic file (type pdf)
-<use cli.pdf>
-Package pdftex.def Info: cli.pdf  used on input line 408. on input line 408.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 408.
+ <./qc.pdf, page is rotated 90 degrees> <./qc.png>]
+<ic.pdf, id=350, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: ic.pdf Graphic file (type pdf)
+<use ic.pdf>
+Package pdftex.def Info: ic.pdf  used on input line 395. on input line 395.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 395.
+<ic.png, id=352, 627.5445pt x 176.45924pt>
+File: ic.png Graphic file (type png)
+<use ic.png>
+Package pdftex.def Info: ic.png  used on input line 399. on input line 399.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 399.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--412
+Underfull \hbox (badness 10000) in paragraph at lines 391--402
 
  []
 
 [22
 
- <./pdf25.pdf> <./cli.pdf>]
-<cgs.pdf, id=454, pagebox=cropbox, 2276.505pt x 853.1875pt>
-File: cgs.pdf Graphic file (type pdf)
-<use cgs.pdf>
-Package pdftex.def Info: cgs.pdf  used on input line 418. on input line 418.
-Package pdftex.def Info: Requested size: 469.75499pt x 176.0502pt on input line
- 418.
+ <./ic.pdf, page is rotated 90 degrees> <./ic.png>]
+<gc.pdf, id=372, pagebox=cropbox, 845.1575pt x 597.23125pt>
+File: gc.pdf Graphic file (type pdf)
+<use gc.pdf>
+Package pdftex.def Info: gc.pdf  used on input line 408. on input line 408.
+Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
+e 408.
+<gc.png, id=374, 627.5445pt x 176.45924pt>
+File: gc.png Graphic file (type png)
+<use gc.png>
+Package pdftex.def Info: gc.png  used on input line 413. on input line 413.
+Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
+e 413.
  [23
 
- <./cgs.pdf>]
+ <./gc.pdf, page is rotated 90 degrees> <./gc.png>]
 No file u2.bbl.
 [24
 
 ] 
 AED: lastpage setting LastPage
-(u2.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(u2.aux) ) 
 Here is how much of TeX's memory you used:
- 5011 strings out of 493312
- 70056 string characters out of 3138901
+ 5013 strings out of 493312
+ 69776 string characters out of 3138902
  248663 words of memory out of 3000000
- 8434 multiletter control sequences out of 15000+200000
+ 8446 multiletter control sequences out of 15000+200000
  13930 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,58p,536b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cti1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecbi1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecbx1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Alex\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Alex\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Ale
-x\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb>
-Output written on u2.pdf (24 pages, 576937 bytes).
+ <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\ecti1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecbi1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Alex\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Alex\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Alex
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\U
+sers\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.
+pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb>
+Output written on u2.pdf (24 pages, 1915880 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
+ 734 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

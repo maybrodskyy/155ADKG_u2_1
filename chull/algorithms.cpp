@@ -10,7 +10,7 @@ algorithms::algorithms()
 
 int algorithms::getPosition(QPoint &q,QPoint &a, QPoint &b)
 {
-    double eps = 1.0e-6;
+    double eps = 1.0e-8;
     double ux = b.x() - a.x();
     double uy = b.y() - a.y();
     double vx = q.x() - a.x();
@@ -405,7 +405,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
     // create pivot
     pvt=points[0];
     //orientation of pivot
-    pvt_orient.setX(-10000);
+    pvt_orient.setX(-1000);
     pvt_orient.setY(pvt.y());
 
     std::sort(points.begin(), points.end(), compareAngle);
@@ -440,6 +440,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
         }
         sec_ch.push_back(ch[i]);
     }
+
   for(unsigned int i = 0 ; i < sec_ch.size() - 1 ; i++ )
      {   // try to find points on the same line
          if( getPointLineDist( sec_ch[i] , sec_ch[i+1] , sec_ch[i+2] ) ==-1 ){
@@ -453,8 +454,7 @@ std::vector<QPoint> algorithms::grscan(std::vector<QPoint> &points)
     bool algorithms::compareAngle(QPoint &a, QPoint &b)
     {
         //function compare angles between 2 points
-    const double eps = 1.0e-13;
-
+    const double eps = 1.0e-20;
     double anga = getAngle(pvt, pvt_orient, pvt, a);
     double angb = getAngle(pvt, pvt_orient, pvt, b);
 
