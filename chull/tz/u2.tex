@@ -228,8 +228,8 @@ Druhý mod, respektive Graph mode vytváří graf, který znázorňuje generová
 \clearpage
 \newpage
 \section{Výstupní data}
-Výstup je vizualizací řešeného problému v grafickém okně. Taky v grafickém okně je slovně napsana rychlost výpočtu algoritmu.\\ 
-\bigskip 
+Výstup je vizualizací řešeného problému v grafickém okně. Taky v grafickém okně je napsána rychlost výpočtu algoritmu.\\ 
+Měření času probíhá v programu vždy při spuštění konkrétního algoritmu (a pouze něj - neměří se rychlost generování bodů ani jejich vykreslení. Pouze samotný výpočet obálky). Před spuštěním algoritmu a po jeho ukončení se odečtou časové hodnoty pomocí \texttt{std::clock\_t}, z jejichž rozdílu se poté zjistí tzv. \textit{processor time}, jehož následným vydělením \texttt{CLOCKS\_PER\_SEC} získáme čas v sekundách. \\
 Praktickým výstupem je graf znázorňující rychlot výpočtu algoritmu v podobě vykreslování grafu. Uživátel si sam zvolí umistění. Víc další kapitoly\\ 
 \bigskip 
 \clearpage

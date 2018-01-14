@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.13)  13 JAN 2018 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  14 JAN 2018 09:21
 entering extended mode
 **./u2.tex
 (u2.tex
-LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -21,24 +21,23 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip43
-\f@nch@O@elh=\skip44
-\f@nch@O@erh=\skip45
-\f@nch@O@olh=\skip46
-\f@nch@O@orh=\skip47
-\f@nch@O@elf=\skip48
-\f@nch@O@erf=\skip49
-\f@nch@O@olf=\skip50
-\f@nch@O@orf=\skip51
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\extramarks.sty"
-Package: extramarks 2017/06/30 v3.9a Extra marks for LaTeX
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\extramarks.sty
+Package: extramarks 2016/08/27 2.1 Extra marks
 \@temptokenb=\toks14
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
@@ -50,20 +49,28 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -76,27 +83,27 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count87
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count88
 \lst@gtempboxa=\box26
 \lst@token=\toks16
-\lst@length=\count88
+\lst@length=\count89
 \lst@currlwidth=\dimen105
-\lst@column=\count89
-\lst@pos=\count90
+\lst@column=\count90
+\lst@pos=\count91
 \lst@lostspace=\dimen106
 \lst@width=\dimen107
-\lst@newlines=\count91
-\lst@lineno=\count92
+\lst@newlines=\count92
+\lst@lineno=\count93
 \lst@maxwidth=\dimen108
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count93
-\lst@skipnumbers=\count94
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
@@ -104,9 +111,9 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count95
+\c@lips@count=\count96
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -114,14 +121,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks18
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -333,8 +340,6 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
    defining Unicode char U+1E02 (decimal 7682)
    defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
@@ -355,14 +360,12 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -403,7 +406,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -427,67 +430,62 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
-Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count96
-\calc@Bcount=\count97
+\calc@Acount=\count97
+\calc@Bcount=\count98
 \calc@Adimen=\dimen109
 \calc@Bdimen=\dimen110
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count98
+\calc@Ccount=\count99
 \calc@Cskip=\skip54
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )))
 \AM@pagewidth=\dimen111
 \AM@pageheight=\dimen112
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
-File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box28
 \AM@global@opts=\toks19
 \AM@toc@title=\toks20
-\c@AM@survey=\count99
+\c@AM@survey=\count100
 \AM@templatesizebox=\box29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-) (u2.aux)
+)
+(u2.aux)
 \openout1 = `u2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
@@ -506,20 +504,33 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 150.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\PMM\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
+\scratchcounter=\count101
 \scratchdimen=\dimen113
 \scratchbox=\box30
-\nofMPsegments=\count101
-\nofMParguments=\count102
+\nofMPsegments=\count102
+\nofMParguments=\count103
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count103
+\MPscratchCnt=\count104
 \MPscratchDim=\dimen114
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
 \everyMPtoPDFconversion=\toks22
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
@@ -536,32 +547,19 @@ Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count106
+\c@lstlisting=\count107
 \AtBeginShipoutBox=\box31
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
@@ -583,7 +581,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 152.
  [1
 
-{C:/Users/Alex/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (u2.toc
+{C:/Users/PMM/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (u2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -593,13 +591,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `u2.toc'.
 
  [2]
-<zadani.pdf, id=14, pagebox=cropbox, 614.295pt x 794.97pt>
+<zadani.pdf, id=14, 614.295pt x 794.97pt>
 File: zadani.pdf Graphic file (type pdf)
-<use zadani.pdf>
-Package pdftex.def Info: zadani.pdf  used on input line 174. on input line 174.
-
-Package pdftex.def Info: Requested size: 469.75499pt x 455.61336pt on input lin
-e 174.
+ <use zadani.pdf>
+Package pdftex.def Info: zadani.pdf used on input line 174.
+(pdftex.def)             Requested size: 469.75499pt x 455.61336pt.
  [3 <./zadani.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
@@ -618,83 +614,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
 ] [7
 
-] [8
-
 ]
-<obrazek1.png, id=98, 776.14969pt x 455.45157pt>
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 232.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+[8
+
+] <obrazek1.png, id=100, 776.14969pt x 455.45157pt>
 File: obrazek1.png Graphic file (type png)
-<use obrazek1.png>
-Package pdftex.def Info: obrazek1.png  used on input line 240. on input line 24
-0.
-Package pdftex.def Info: Requested size: 469.75499pt x 275.66371pt on input lin
-e 240.
-<obrazek2.png, id=100, 770.12718pt x 452.4403pt>
+ <use obrazek1.png>
+Package pdftex.def Info: obrazek1.png used on input line 240.
+(pdftex.def)             Requested size: 469.75499pt x 275.66371pt.
+
+<obrazek2.png, id=102, 770.12718pt x 452.4403pt>
 File: obrazek2.png Graphic file (type png)
-<use obrazek2.png>
-Package pdftex.def Info: obrazek2.png  used on input line 245. on input line 24
-5.
-Package pdftex.def Info: Requested size: 469.75499pt x 275.97438pt on input lin
-e 245.
-<obrazek3.png, id=102, 773.13844pt x 455.45157pt>
+ <use obrazek2.png>
+Package pdftex.def Info: obrazek2.png used on input line 245.
+(pdftex.def)             Requested size: 469.75499pt x 275.97438pt.
+
+<obrazek3.png, id=104, 773.13844pt x 455.45157pt>
 File: obrazek3.png Graphic file (type png)
-<use obrazek3.png>
-Package pdftex.def Info: obrazek3.png  used on input line 250. on input line 25
-0.
-Package pdftex.def Info: Requested size: 469.75499pt x 276.73396pt on input lin
-e 250.
-<obrazek4.png, id=104, 771.63281pt x 452.4403pt>
+ <use obrazek3.png>
+Package pdftex.def Info: obrazek3.png used on input line 250.
+(pdftex.def)             Requested size: 469.75499pt x 276.73396pt.
+
+<obrazek4.png, id=106, 771.63281pt x 452.4403pt>
 File: obrazek4.png Graphic file (type png)
-<use obrazek4.png>
-Package pdftex.def Info: obrazek4.png  used on input line 255. on input line 25
-5.
-Package pdftex.def Info: Requested size: 469.75499pt x 275.4359pt on input line
- 255.
+ <use obrazek4.png>
+Package pdftex.def Info: obrazek4.png used on input line 255.
+(pdftex.def)             Requested size: 469.75499pt x 275.4359pt.
  [9
 
  <./obrazek1.png>] [10 <./obrazek2.png> <./obrazek3.png>] [11 <./obrazek4.png>]
-<jr.pdf, id=119, pagebox=cropbox, 845.1575pt x 597.23125pt>
+
+<jr.pdf, id=121, 845.1575pt x 597.23125pt>
 File: jr.pdf Graphic file (type pdf)
-<use jr.pdf>
-Package pdftex.def Info: jr.pdf  used on input line 265. on input line 265.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 265.
-<jr.png, id=121, 630.55576pt x 175.857pt>
+ <use jr.pdf>
+Package pdftex.def Info: jr.pdf used on input line 265.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<jr.png, id=123, 630.55576pt x 175.857pt>
 File: jr.png Graphic file (type png)
-<use jr.png>
-Package pdftex.def Info: jr.png  used on input line 270. on input line 270.
-Package pdftex.def Info: Requested size: 469.75499pt x 131.01495pt on input lin
-e 270.
+ <use jr.png>
+Package pdftex.def Info: jr.png used on input line 270.
+(pdftex.def)             Requested size: 469.75499pt x 131.01495pt.
  [12
 
- <./jr.pdf, page is rotated 90 degrees> <./jr.png>]
-<qr.pdf, id=142, pagebox=cropbox, 845.1575pt x 597.23125pt>
+ <./jr.pdf, page is rotated 90 degrees> <./jr.png>] <qr.pdf, id=144, 845.1575pt
+ x 597.23125pt>
 File: qr.pdf Graphic file (type pdf)
-<use qr.pdf>
-Package pdftex.def Info: qr.pdf  used on input line 278. on input line 278.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 278.
-<qr.png, id=144, 630.55576pt x 176.45924pt>
-File: qr.png Graphic file (type png)
-<use qr.png>
-Package pdftex.def Info: qr.png  used on input line 282. on input line 282.
-Package pdftex.def Info: Requested size: 469.75499pt x 131.46362pt on input lin
-e 282.
 
-[13
+<use qr.pdf>
+Package pdftex.def Info: qr.pdf used on input line 278.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+ <qr.png, id=146, 630.55576pt x 176.45924pt>
+File: qr.png Graphic file (type png)
+ <use qr.png>
+Package pdftex.def Info: qr.png used on input line 282.
+(pdftex.def)             Requested size: 469.75499pt x 131.46362pt.
+ [13
 
  <./qr.pdf, page is rotated 90 degrees> <./qr.png>]
-<ir.pdf, id=165, pagebox=cropbox, 845.1575pt x 597.23125pt>
+<ir.pdf, id=167, 845.1575pt x 597.23125pt>
 File: ir.pdf Graphic file (type pdf)
-<use ir.pdf>
-Package pdftex.def Info: ir.pdf  used on input line 290. on input line 290.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 290.
-<ir.png, id=167, 630.55576pt x 176.45924pt>
+ <use ir.pdf>
+Package pdftex.def Info: ir.pdf used on input line 290.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<ir.png, id=169, 630.55576pt x 176.45924pt>
 File: ir.png Graphic file (type png)
-<use ir.png>
-Package pdftex.def Info: ir.png  used on input line 294. on input line 294.
-Package pdftex.def Info: Requested size: 469.75499pt x 131.46362pt on input lin
-e 294.
+ <use ir.png>
+Package pdftex.def Info: ir.png used on input line 294.
+(pdftex.def)             Requested size: 469.75499pt x 131.46362pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 286--297
 
@@ -703,33 +695,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--297
 [14
 
  <./ir.pdf, page is rotated 90 degrees> <./ir.png>]
-<gr.pdf, id=187, pagebox=cropbox, 845.1575pt x 597.23125pt>
+<gr.pdf, id=189, 845.1575pt x 597.23125pt>
 File: gr.pdf Graphic file (type pdf)
-<use gr.pdf>
-Package pdftex.def Info: gr.pdf  used on input line 303. on input line 303.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 303.
-<gr.png, id=189, 630.55576pt x 176.45924pt>
+ <use gr.pdf>
+Package pdftex.def Info: gr.pdf used on input line 303.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<gr.png, id=191, 630.55576pt x 176.45924pt>
 File: gr.png Graphic file (type png)
-<use gr.png>
-Package pdftex.def Info: gr.png  used on input line 308. on input line 308.
-Package pdftex.def Info: Requested size: 469.75499pt x 131.46362pt on input lin
-e 308.
+ <use gr.png>
+Package pdftex.def Info: gr.png used on input line 308.
+(pdftex.def)             Requested size: 469.75499pt x 131.46362pt.
  [15
 
- <./gr.pdf, page is rotated 90 degrees> <./gr.png>]
-<jg.pdf, id=209, pagebox=cropbox, 845.1575pt x 597.23125pt>
+ <./gr.pdf, page is rotated 90 degrees> <./gr.png>] <jg.pdf, id=211, 845.1575pt
+ x 597.23125pt>
 File: jg.pdf Graphic file (type pdf)
+
 <use jg.pdf>
-Package pdftex.def Info: jg.pdf  used on input line 317. on input line 317.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 317.
-<jg.png, id=211, 627.5445pt x 176.45924pt>
+Package pdftex.def Info: jg.pdf used on input line 317.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+ <jg.png, id=213, 627.5445pt x 176.45924pt>
 File: jg.png Graphic file (type png)
-<use jg.png>
-Package pdftex.def Info: jg.png  used on input line 321. on input line 321.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 321.
+ <use jg.png>
+Package pdftex.def Info: jg.png used on input line 321.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 313--324
 
@@ -738,63 +728,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--324
 [16
 
  <./jg.pdf, page is rotated 90 degrees> <./jg.png>]
-<qg.pdf, id=233, pagebox=cropbox, 845.1575pt x 597.23125pt>
+<qg.pdf, id=235, 845.1575pt x 597.23125pt>
 File: qg.pdf Graphic file (type pdf)
-<use qg.pdf>
-Package pdftex.def Info: qg.pdf  used on input line 330. on input line 330.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 330.
-<qg.png, id=235, 627.5445pt x 176.45924pt>
+ <use qg.pdf>
+Package pdftex.def Info: qg.pdf used on input line 330.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<qg.png, id=237, 627.5445pt x 176.45924pt>
 File: qg.png Graphic file (type png)
-<use qg.png>
-Package pdftex.def Info: qg.png  used on input line 334. on input line 334.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 334.
+ <use qg.png>
+Package pdftex.def Info: qg.png used on input line 334.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
  [17
 
- <./qg.pdf, page is rotated 90 degrees> <./qg.png>]
-<ig.pdf, id=257, pagebox=cropbox, 845.1575pt x 597.23125pt>
+ <./qg.pdf, page is rotated 90 degrees> <./qg.png>] <ig.pdf, id=259, 845.1575pt
+ x 597.23125pt>
 File: ig.pdf Graphic file (type pdf)
+
 <use ig.pdf>
-Package pdftex.def Info: ig.pdf  used on input line 342. on input line 342.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 342.
-<ig.png, id=259, 627.5445pt x 176.45924pt>
+Package pdftex.def Info: ig.pdf used on input line 342.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+ <ig.png, id=261, 627.5445pt x 176.45924pt>
 File: ig.png Graphic file (type png)
-<use ig.png>
-Package pdftex.def Info: ig.png  used on input line 346. on input line 346.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 346.
+ <use ig.png>
+Package pdftex.def Info: ig.png used on input line 346.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
  [18
 
  <./ig.pdf, page is rotated 90 degrees> <./ig.png>]
-<gg.pdf, id=281, pagebox=cropbox, 845.1575pt x 597.23125pt>
+<gg.pdf, id=283, 845.1575pt x 597.23125pt>
 File: gg.pdf Graphic file (type pdf)
-<use gg.pdf>
-Package pdftex.def Info: gg.pdf  used on input line 356. on input line 356.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 356.
-<gg.png, id=283, 627.5445pt x 176.45924pt>
+ <use gg.pdf>
+Package pdftex.def Info: gg.pdf used on input line 356.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<gg.png, id=285, 627.5445pt x 176.45924pt>
 File: gg.png Graphic file (type png)
-<use gg.png>
-Package pdftex.def Info: gg.png  used on input line 361. on input line 361.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 361.
+ <use gg.png>
+Package pdftex.def Info: gg.png used on input line 361.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
  [19
 
- <./gg.pdf, page is rotated 90 degrees> <./gg.png>]
-<jc.pdf, id=304, pagebox=cropbox, 845.1575pt x 597.23125pt>
+ <./gg.pdf, page is rotated 90 degrees> <./gg.png>] <jc.pdf, id=306, 845.1575pt
+ x 597.23125pt>
 File: jc.pdf Graphic file (type pdf)
+
 <use jc.pdf>
-Package pdftex.def Info: jc.pdf  used on input line 370. on input line 370.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 370.
-<jc.png, id=306, 627.5445pt x 176.45924pt>
+Package pdftex.def Info: jc.pdf used on input line 370.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+ <jc.png, id=308, 627.5445pt x 176.45924pt>
 File: jc.png Graphic file (type png)
-<use jc.png>
-Package pdftex.def Info: jc.png  used on input line 374. on input line 374.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 374.
+ <use jc.png>
+Package pdftex.def Info: jc.png used on input line 374.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 366--377
 
@@ -803,33 +789,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--377
 [20
 
  <./jc.pdf, page is rotated 90 degrees> <./jc.png>]
-<qc.pdf, id=328, pagebox=cropbox, 845.1575pt x 597.23125pt>
+<qc.pdf, id=330, 845.1575pt x 597.23125pt>
 File: qc.pdf Graphic file (type pdf)
-<use qc.pdf>
-Package pdftex.def Info: qc.pdf  used on input line 383. on input line 383.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 383.
-<qc.png, id=330, 627.5445pt x 176.45924pt>
+ <use qc.pdf>
+Package pdftex.def Info: qc.pdf used on input line 383.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<qc.png, id=332, 627.5445pt x 176.45924pt>
 File: qc.png Graphic file (type png)
-<use qc.png>
-Package pdftex.def Info: qc.png  used on input line 387. on input line 387.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 387.
+ <use qc.png>
+Package pdftex.def Info: qc.png used on input line 387.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
  [21
 
- <./qc.pdf, page is rotated 90 degrees> <./qc.png>]
-<ic.pdf, id=350, pagebox=cropbox, 845.1575pt x 597.23125pt>
+ <./qc.pdf, page is rotated 90 degrees> <./qc.png>] <ic.pdf, id=352, 845.1575pt
+ x 597.23125pt>
 File: ic.pdf Graphic file (type pdf)
+
 <use ic.pdf>
-Package pdftex.def Info: ic.pdf  used on input line 395. on input line 395.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 395.
-<ic.png, id=352, 627.5445pt x 176.45924pt>
+Package pdftex.def Info: ic.pdf used on input line 395.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+ <ic.png, id=354, 627.5445pt x 176.45924pt>
 File: ic.png Graphic file (type png)
-<use ic.png>
-Package pdftex.def Info: ic.png  used on input line 399. on input line 399.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 399.
+ <use ic.png>
+Package pdftex.def Info: ic.png used on input line 399.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 391--402
 
@@ -838,18 +822,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 391--402
 [22
 
  <./ic.pdf, page is rotated 90 degrees> <./ic.png>]
-<gc.pdf, id=372, pagebox=cropbox, 845.1575pt x 597.23125pt>
+<gc.pdf, id=374, 845.1575pt x 597.23125pt>
 File: gc.pdf Graphic file (type pdf)
-<use gc.pdf>
-Package pdftex.def Info: gc.pdf  used on input line 408. on input line 408.
-Package pdftex.def Info: Requested size: 469.75499pt x 331.95937pt on input lin
-e 408.
-<gc.png, id=374, 627.5445pt x 176.45924pt>
+ <use gc.pdf>
+Package pdftex.def Info: gc.pdf used on input line 408.
+(pdftex.def)             Requested size: 469.75499pt x 331.95937pt.
+
+<gc.png, id=376, 627.5445pt x 176.45924pt>
 File: gc.png Graphic file (type png)
-<use gc.png>
-Package pdftex.def Info: gc.png  used on input line 413. on input line 413.
-Package pdftex.def Info: Requested size: 469.75499pt x 132.09099pt on input lin
-e 413.
+ <use gc.png>
+Package pdftex.def Info: gc.png used on input line 413.
+(pdftex.def)             Requested size: 469.75499pt x 132.09099pt.
  [23
 
  <./gc.pdf, page is rotated 90 degrees> <./gc.png>]
@@ -860,31 +843,32 @@ No file u2.bbl.
 AED: lastpage setting LastPage
 (u2.aux) ) 
 Here is how much of TeX's memory you used:
- 5013 strings out of 493312
- 69776 string characters out of 3138902
- 248663 words of memory out of 3000000
- 8446 multiletter control sequences out of 15000+200000
- 13930 words of font info for 33 fonts, out of 3000000 for 9000
+ 5092 strings out of 493333
+ 70649 string characters out of 3139199
+ 252860 words of memory out of 3000000
+ 8502 multiletter control sequences out of 15000+200000
+ 14551 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,58p,536b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
-dpi600\ecti1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecbi1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\l
-jfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Alex\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Alex\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Alex\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Alex
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\U
-sers\Alex\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.
-pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb>
-Output written on u2.pdf (24 pages, 1915880 bytes).
+ 40i,11n,58p,551b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\PMM\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
+pi600\ecti1000.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:
+\Users\PMM\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1000
+.pk> <C:\Users\PMM\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecbx1000.pk> <C:\Users\PMM\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecbx1440.pk> <C:\Users\PMM\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecrm1000.pk> <C:\Users\PMM\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\PMM\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\PMM\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on u2.pdf (24 pages, 1934438 bytes).
 PDF statistics:
- 734 PDF objects out of 1000 (max. 8388607)
+ 744 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  320 words of extra memory for PDF output out of 10000 (max. 10000000)
 
