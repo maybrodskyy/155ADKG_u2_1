@@ -36,7 +36,6 @@ private slots:
 
   //  void on_graphCheckBox_clicked(bool ticked);
 
-    void on_generateGraph_clicked();
 
 private:
     Ui::Widget *ui;
